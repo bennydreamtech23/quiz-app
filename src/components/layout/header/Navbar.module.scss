@@ -21,7 +21,7 @@
     // }
     a.active {
       color: black;
-      border-bottom: 2px solid black;
+      //border-bottom: 2px solid black;
     }
 
     a {
@@ -96,7 +96,7 @@
     position: relative;
     z-index: 2;
     background-color: white;
-    // gap: 5rem;
+    gap: 5rem;
 
     .links {
       align-items: flex-start;
