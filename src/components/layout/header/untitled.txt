@@ -1,0 +1,89 @@
+    <Box sx={{ display: "flex" }}>
+      <IconButton
+        id="scroll-btn"
+        className="shadow"
+        onClick={scrollToTop}
+        sx={{
+          visibility: `hidden`,
+          position: `fixed`,
+          bottom: `2rem`,
+          right: `2rem`,
+          bgcolor: `#714DD9`,
+          color: `#fff`,
+          zIndex: 999,
+          "&:hover": {
+            bgcolor: `#714DD950`,
+            transform: `scale(1.1)`
+          }
+        }}
+      >
+        <ArrowUpward />
+      </IconButton>
+      <AppBar
+        id="navbar"
+        // elevation={0}
+        color="transparent"
+        position="static"
+        component="nav"
+        // className="shadow"
+      >
+        <Toolbar
+          className={style.nav}
+          sx={{
+            display: `flex`,
+            flexDirection: { xs: `row-reverse`, md: `row` },
+            justifyContent: `space-between`
+          }}
+        >
+          <IconButton
+            color="inherit"
+            aria-label="open drawer"
+            edge="start"
+            onClick={handleDrawerToggle}
+            sx={{ display: { md: "none" } }}
+          >
+            <MenuIcon />
+          </IconButton>
+          <Link to="/">
+            <img
+              src ={logo}
+              alt="quiz app"
+            />
+          </Link>
+
+          <Box sx={{ display: { xs: "none", md: "block" } }}>
+            <Links isMobile={false} />
+          </Box>
+                    {/* CTAs */}
+          <Stack
+            width={`20rem`}
+            display={{ xs: `none`, md: `flex` }}
+            direction={`row`}
+            gap={4}
+          >
+            {CTA}
+          </Stack>
+    
+        </Toolbar>
+      </AppBar>
+      <Box component="nav">
+        <Drawer
+          container={container}
+          variant="temporary"
+          open={mobileOpen}
+          onClose={handleDrawerToggle}
+          ModalProps={{
+            keepMounted: true // Better open performance on mobile.
+          }}
+          sx={{
+            display: { xs: "block", md: "none" },
+            "& .MuiDrawer-paper": {
+              boxSizing: "border-box",
+              width: drawerWidth
+            }
+          }}
+        >
+          {drawer}
+        </Drawer>
+      </Box>
+    </Box>

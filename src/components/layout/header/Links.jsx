@@ -1,53 +1,63 @@
+import {useState} from "react";
+import {
+  Drawer,
+  IconButton,
+  List,
+  ListItem,
+  ListItemText,
+ makeStyles
+} from "@material-ui/core";
 
-import { NavLink } from "react-router-dom";
-import style from "./Navbar.module.scss";
-//import { useContext } from "react";
-//import { AuthContext } from "../../contexts/authContext/AuthContext";
-import { Stack } from "@mui/material";
+import { Link } from "react-router-dom";
+import MenuIcon from "@material-ui/icons/Menu"; 
 
-const Links = ({ isMobile }) => {
-  //const { user } = useContext(AuthContext);
+const useStyles = makeStyles(()=>({
+    link:{
+        textDecoration:"none",
+        color: 'black',
+        fontSize: "20px",
+    },
+    icon:{
+        color: "white"
+    }
+}));
+
+const Links = () =>  {
+const classes = useStyles();
+  const [openDrawer, setOpenDrawer] = useState(false);
   return (
-    <Stack
-      direction={{ md: `row` }}
-      gap={3}
-      className={[style.links, isMobile ? null : style.navbarLink].join(" ")}
-    >
-      <NavLink
-        to={``}
-        className={({ isActive }) => (isActive ? style.active : style.inactive)}
+    <>
+      <Drawer
+        open={openDrawer}
+        onClose={() => setOpenDrawer(false)}
       >
-        How it works
-      </NavLink>
-      <NavLink
-        to={`/`}
-        className={({ isActive }) => (isActive ? style.active : style.inactive)}
-      >
-        About Us
-      </NavLink>
-      <NavLink
-        to={`/`}
-        className={({ isActive }) => (isActive ? style.active : style.inactive)}
-      >
-        Contact Us
-      </NavLink>
-      <NavLink
-        to={`/`}
-        className={({ isActive }) => (isActive ? style.active : style.inactive)}
-      >
-        Subscription Plan
-      </NavLink>
-
-        <NavLink
-          to={`/`}
-          className={({ isActive }) =>
-            isActive ? style.active : style.inactive
-          }
-        >
-          Dashboard
-        </NavLink>
-    </Stack>
+        <List>
+         <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link to="/" className={classes.link}>Home</Link>
+            </ListItemText>
+          </ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link to="/about" className={classes.link}>About</Link>
+            </ListItemText>
+          </ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link to="/contact" className={classes.link}>Contact</Link>
+            </ListItemText>
+          </ListItem>
+          <ListItem onClick={() => setOpenDrawer(false)}>
+            <ListItemText>
+              <Link to="/about" className={classes.link}>Faq</Link>
+            </ListItemText>
+          </ListItem>
+        </List>
+      </Drawer>
+      <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
+        <MenuIcon className={classes.icon} />
+      </IconButton>
+    </>
   );
-};
-
+}
 export default Links;
