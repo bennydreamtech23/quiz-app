@@ -15,6 +15,14 @@ import Links from "../header/Links";
 import logo from "../../../assets/Group 1 1.png";
 
 const useStyles = makeStyles((theme) => ({
+  appBar:{
+    backgroundColor: "transparent",
+      boxShadow: '0px 0px 0px 0px',
+    transition: theme.transitions.create(["width", "margin"], {
+     easing: theme.transitions.easing.sharp,
+    duration: theme.transitions.duration.leavingScreen,
+    }),
+  },
   navlinks: {
     marginLeft: theme.spacing(5),
    marginRight: theme.spacing(15),
@@ -27,13 +35,34 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
-    color: "white",
+    color: "black",
     fontSize: "20px",
     marginLeft: theme.spacing(10),
     "&:hover": {
-      color: "yellow",
-      borderBottom: "1px solid white",
+      color: "green",
+      borderBottom: "1px solid black",
     },
+  },
+  btn: {
+  border: '1px  solid green',
+  background: 'transparent',
+  transition: '0.3s ease',
+   textDecoration: "none",
+    color: "black",
+    fontSize: "20px",
+    marginLeft: theme.spacing(10),
+    padding: theme.spacing(1),
+  '&:hover': {
+    boxShadow: '0px 0px 0px 4px green',
+  }
+  },
+  toolbar: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "flex-end",
+    padding: theme.spacing(0, 1),
+    // necessary for content to be below app bar
+    ...theme.mixins.toolbar,
   },
 }));
 
@@ -43,9 +72,9 @@ function NavBar(props) {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
   
   return (
-    <AppBar position="static">
+    <AppBar position="static"  className={classes.appBar}>
       <CssBaseline />
-      <Toolbar>
+      <Toolbar className={classes.Toolbar}>
         <Typography variant="h4" className={classes.logo}>
           <img src={logo} alt='logo' style= {{width: "50px"}}/>
         </Typography>
@@ -54,16 +83,22 @@ function NavBar(props) {
         ) : (
           <div className={classes.navlinks}>
             <Link to="/" className={classes.link}>
-              Home
+             About
             </Link>
             <Link to="/" className={classes.link}>
-              About
+              Services
+            </Link>
+            <Link to="/" className={classes.link}>
+              Blog
             </Link>
             <Link to="/" className={classes.link}>
               Contact
             </Link>
-            <Link to="/" className={classes.link}>
-              FAQ
+             <Link to="/" className={classes.btn}>
+              Login
+            </Link>
+             <Link to="/" className={classes.btn}>
+             Sign Up
             </Link>
           </div>
         )}
