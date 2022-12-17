@@ -1,5 +1,6 @@
 
 import HeroSection from '../../landing-page/hero-section/HeroSection';
+import CardComponent from '../../landing-page/card-component/CardComponent';
 import Layout from "../../layout/Layout";
 
 const LandingPage = () => {
@@ -7,6 +8,7 @@ const LandingPage = () => {
 <>
 <Layout>
    <HeroSection/>
+   <CardComponent/>
    </Layout>
     </>
   );

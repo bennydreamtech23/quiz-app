@@ -1,0 +1,25 @@
+
+.CardComponentContainer{
+display: flex;
+justify-content: center;
+align-content: center;
+flex-direction: column;
+background: #1D4645;
+border: 1px solid #FFFFFF;
+padding: 32px;
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 16px;
+}
+}

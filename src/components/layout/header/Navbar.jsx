@@ -7,6 +7,7 @@ import {
   makeStyles,
   useTheme,
   useMediaQuery,
+   Box 
 } from "@material-ui/core";
 
 import { Link} from "react-router-dom";
@@ -24,10 +25,12 @@ const useStyles = makeStyles((theme) => ({
     }),
   },
   navlinks: {
-    marginLeft: theme.spacing(5),
-   marginRight: theme.spacing(15),
-   margin: theme.spacing(5),
     display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    //marginLeft: theme.spacing(5),
+  // marginRight: theme.spacing(15),
+   margin: theme.spacing(5), 
   },
  logo: {
     flexGrow: "1",
@@ -37,14 +40,25 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     color: "black",
     fontSize: "20px",
-    marginLeft: theme.spacing(10),
+     marginRight: "50px",
+    marginLeft: theme.spacing(5),
+    "&:hover": {
+      color: "green",
+      borderBottom: "1px solid black",
+    },
+  },
+  active:{
+    marginRight: "50px",
+   textDecoration: "none",
+   color: "black",
+    fontSize: "20px",
     "&:hover": {
       color: "green",
       borderBottom: "1px solid black",
     },
   },
   btn: {
-  border: '1px  solid green',
+  border: '1px  solid #1D4645',
   background: 'transparent',
   transition: '0.3s ease',
    textDecoration: "none",
@@ -52,8 +66,10 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "20px",
     marginLeft: theme.spacing(10),
     padding: theme.spacing(1),
+    borderRadius: "3px",
   '&:hover': {
-    boxShadow: '0px 0px 0px 4px green',
+    boxShadow: '0px 0px 0px 4px #1D4645',
+    color: "#1D4645"
   }
   },
   toolbar: {
@@ -61,12 +77,15 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "center",
     justifyContent: "flex-end",
     padding: theme.spacing(0, 1),
-    // necessary for content to be below app bar
     ...theme.mixins.toolbar,
   },
+  box:{
+    display: "flex",
+    justifyContent:"flex-end",
+  }
 }));
 
-function NavBar(props) {
+function NavBar() {
   const  classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -74,18 +93,18 @@ function NavBar(props) {
   return (
     <AppBar position="static"  className={classes.appBar}>
       <CssBaseline />
-      <Toolbar className={classes.Toolbar}>
+      <Toolbar className={classes.toolbar}>
         <Typography variant="h4" className={classes.logo}>
-          <img src={logo} alt='logo' style= {{width: "50px"}}/>
+          <img src={logo} alt='logo' style= {{width: "80px"}}/>
         </Typography>
 {isMobile ? (
           <Links />
         ) : (
           <div className={classes.navlinks}>
-            <Link to="/" className={classes.link}>
+            <Link to="/" className={classes.active}>
              About
             </Link>
-            <Link to="/" className={classes.link}>
+            <Link to="/"  className={classes.link}>
               Services
             </Link>
             <Link to="/" className={classes.link}>
@@ -94,12 +113,17 @@ function NavBar(props) {
             <Link to="/" className={classes.link}>
               Contact
             </Link>
+             <Link to="/" className={classes.link}>
+            Dashboard
+            </Link>
+            <Box className={classes.Box}>
              <Link to="/" className={classes.btn}>
               Login
             </Link>
              <Link to="/" className={classes.btn}>
              Sign Up
             </Link>
+            </Box>
           </div>
         )}
       </Toolbar>
