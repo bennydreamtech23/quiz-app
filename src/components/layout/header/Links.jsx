@@ -5,7 +5,6 @@ import {
   List,
   ListItem,
   ListItemText,
- useTheme,
  makeStyles
 } from "@material-ui/core";
 
@@ -26,7 +25,7 @@ const useStyles = makeStyles((theme)=>({
 
     },
   btn: {
-  border: '1px  solid green',
+  border: '1px  solid #1D4645',
   background: 'transparent',
   transition: '0.3s ease',
    textDecoration: "none",
@@ -35,7 +34,8 @@ const useStyles = makeStyles((theme)=>({
     padding: theme.spacing(1),
 borderRadius: "3px",
   '&:hover': {
-    boxShadow: '0px 0px 0px 4px green',
+    boxShadow: '0px 0px 0px 4px #1D4645',
+    color:"#1D4645",
   }
   },
   drawer: {
@@ -59,7 +59,7 @@ borderRadius: "3px",
 
 const Links = () =>  {
 const classes = useStyles();
-  const theme = useTheme();
+  //const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);
   return (
     <>
