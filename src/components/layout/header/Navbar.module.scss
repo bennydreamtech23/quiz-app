@@ -1,109 +1,52 @@
 
-.nav,
-.links,
-.cta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.n-container{
+   display: flex;
+   height: 10vh;
+   justify-content: space-between;
 }
-
-.nav {
-  margin: 0 auto;
-  .links,
-  .cta {
-    gap: 2rem;
-  }
-
-  .links {
-    // flex-direction: column;
-    // @media (min-width: 992px) {
-    //   flex-direction: row;
-    // }
-    a.active {
-      color: black;
-      //border-bottom: 2px solid black;
-    }
-
-    a {
-      &:hover {
-        color: black;
-      }
-    }
-    a {
-      color: black;
-      line-height: 20px;
-      font-weight: 500;
-      /* identical to box height */
-      letter-spacing: -0.204545px;
-    }
-  }
+.n-left{
+   flex: 1;
+   display: flex;
+   align-items: center;
+   gap: 2em;
+   /* background-color: gold; */
 }
-
-.navbarLink,
-.cta {
-  display: none;
-  @media (min-width: 992px) {
-    display: flex;
-  }
+.n-name{
+   font-size: 1.3em;
+   font-weight: bold;
 }
-
-.ctaMobile {
-  width: 100%;
-  a {
-    width: 100%;
-    margin: 1rem 0;
-  }
+.n-right{
+   flex: 1;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 400;
+   /* background-color: greenyellow; */
 }
-
-.logoutBtn {
-  border: 1px solid red;
-  background: transparent;
-  color: red;
-  transition: 0.3s ease;
-  &:hover {
-    box-shadow: 0px 0px 0px 4px #ff000050;
-  }
+.n-list{
+   flex: 10;
+   display: flex;
 }
-
-.sidebar {
-  border: 1px solid red;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 70%;
-  height: 100vh;
-  z-index: 100;
-  border-right: 1px solid lightgray;
-  background-color: white;
-  transition: 1s all ease;
-
-  .backdrop {
-    position: fixed;
-    top: 0%;
-    bottom: 0%;
-    left: 0%;
-    right: 0%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-  }
-
-  .nav {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    height: 100%;
-    position: relative;
-    z-index: 2;
-    background-color: white;
-    gap: 5rem;
-
-    .links {
-      align-items: flex-start;
-      width: 100%;
-      a {
-        padding: 1rem;
-      }
-    }
-  }
+.n-list>ul{
+   display: flex;
+   list-style: none;
+   gap: 2rem;
+   margin-right: 4rem;
 }
+.n-list>ul>li:hover{
+   cursor: pointer;
+   color: var(--orange);
+}
+.n-btn{
+   flex: 2;
+   height: 7vh;
+}
+@media screen and (max-width: 480px) {
+   .n-right{
+      display: none;
+   }
+   .n-left{
+      display: flex;
+      justify-content: space-between;
+   }
+ }

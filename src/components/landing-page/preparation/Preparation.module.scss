@@ -1,0 +1,90 @@
+
+.PreparationContainer{
+  padding: 16px 32px;
+.rowproduct{
+  justify-content: space-between;
+  margin: 100px auto 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.PreparationBtn{
+  box-sizing: border-box;
+  border: 1px solid #1D4645;
+  padding: 0px 10px;
+  background: transparent;
+  border-radius: 10px;
+}
+ .PreparationBtn:hover{
+    transform: scale(1.05);
+  }
+.PreparationBtn:focus{
+  outline: none;
+}
+  .headerTitle{
+font-family: 'Commissioner';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 64px;
+text-transform: capitalize;
+color: #1D4645;
+  @media only screen and (min-width: 320px) and  (max-width: 480px){
+  font-size: 24px;
+  line-height: 28px;
+}
+  }
+  
+  .box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.card{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 16px;
+.card:hover{
+ transform: scale(1.05);
+}
+}
+  
+.orange{
+background: #FFF2E6;
+box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.darkgreen{
+color: white;
+background: #1D4645;
+mix-blend-mode: normal;
+opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+margin-top: 16px;
+}
+
+.orangeImg{
+  width: 12rem;
+  height: 12rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+}

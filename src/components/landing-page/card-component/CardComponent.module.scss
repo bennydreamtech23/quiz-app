@@ -17,9 +17,11 @@ padding: 32px;
 .card{
   display: flex;
   justify-content: center;
-  justify-content: center;
   flex-direction: column;
   margin: auto;
   margin-top: 16px;
+}
+.card:hover{
+ transform: scale(1.05);
 }
 }

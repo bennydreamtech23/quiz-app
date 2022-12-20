@@ -10,9 +10,10 @@ import {
    Box 
 } from "@material-ui/core";
 
+//import Toggle from '../../Toggle/Toggle'
 import { Link} from "react-router-dom";
 import Links from "../header/Links";
-
+//import Toggle from '../Toggle/Toggle'
 import logo from "../../../assets/Group 1 1.png";
 
 const useStyles = makeStyles((theme) => ({
