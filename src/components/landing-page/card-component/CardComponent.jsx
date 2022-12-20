@@ -15,7 +15,8 @@ const CardComponent =()=>{
   return(
     <>
     <Container fluid className={cardStyles.CardComponentContainer}>
-    <Row xs={1} md={2} sm={3} className={cardStyles.box}>
+    <h1>How To Play</h1>
+    <Row xs={1} md={3} sm={2} className={cardStyles.box}>
     <Col className={cardStyles.card}>
     <Card style={{ width: '18rem' , height: "25rem"}} className={cardStyles.card}>
       <Card.Img variant="top" src={picture1} style={{ width: '18rem', height:"18rem"}} />

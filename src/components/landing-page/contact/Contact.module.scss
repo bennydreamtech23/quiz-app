@@ -1,0 +1,60 @@
+
+.TestimonyContainer{
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background: #fff;
+  .headerSubTitleContact{
+font-family: 'Commissioner';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 32px;
+/* identical to box height, or 178% */
+text-align: center;
+letter-spacing: 3px;
+text-transform: uppercase;
+color: #1D4645;
+  }
+  
+   .headerTitleContact{
+color:rgba(29, 70, 69, 1);
+font-family: 'Commissioner';
+font-style: normal;
+font-weight: 700;
+font-size: 54px;
+line-height: 64px;
+/* identical to box height, or 97% */
+text-align: center;
+  @media only screen and (min-width: 320px) and  (max-width: 480px){
+  font-size: 24px;
+  line-height: 28px;
+}
+  }
+  
+   .content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+   @media only screen and (min-width: 320px) and  (max-width: 768px){
+flex-direction: column;
+}
+  .testimonyBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+  }
+  
+  .testimonyCard{
+border-radius: 15px;
+padding: 1rem 2rem;
+}
+  
+   .CardContent{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+}
