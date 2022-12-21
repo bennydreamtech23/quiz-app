@@ -1,5 +1,7 @@
 
 .headerHero{
+  overflow-x: hidden;
+  width: 100%;
   .headerBox{
     padding: 32px;
  @media only screen and (min-width: 320px) and  (max-width: 480px){
@@ -7,19 +9,19 @@
 }
   }
   .headerTitle{
-font-family: 'Commissioner';
+font-family: 'Space Mono';
 font-style: normal;
 font-weight: 700;
 font-size: 72px;
 line-height: 80px;
-color: #1D4645;
+color: var(--color-title);
   @media only screen and (min-width: 320px) and  (max-width: 480px){
-  font-size: 50px;
+  font-size: 52px;
   line-height: 60px;
 }
   }
   .headerSubtitle{
-font-family: 'Commissioner';
+font-family: 'Space Mono';
 font-style: normal;
 font-weight: 400;
 font-size: 25px;
@@ -35,6 +37,7 @@ width: 272px;
 height: 62px;
 background: #F2F2F2;
 border:none;
+margin-bottom: 0.5rem;
 }
 .headerBtn{
 font-family: 'Commissioner';
@@ -49,6 +52,7 @@ border-radius: 4px;
 height: 62px;
 border: none;
 color: rgba(29, 70, 69, 1);
+padding: 1rem 1rem;
 }
 
 .headerContent{
