@@ -5,12 +5,13 @@ import {
   List,
   ListItem,
   ListItemText,
- makeStyles
+ makeStyles,
+ Box
 } from "@material-ui/core";
-
+import NavbarStyles from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu"; 
-
+import {BsFillBrightnessHighFill, BsFillMoonFill} from "react-icons/bs";
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme)=>({
@@ -57,7 +58,7 @@ borderRadius: "3px",
     },
 }));
 
-const Links = () =>  {
+const Links = ({changeTheme,  currentTheme}) =>  {
 const classes = useStyles();
   //const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -102,6 +103,10 @@ const classes = useStyles();
              Sign Up
             </Link>
             </ListItemText>
+          </ListItem>
+        <ListItem className={NavbarStyles.toggle} onClick={changeTheme}
+        style={{width: "50px", display: "flex", alignItems: "center", justifyContent:"center", marginTop:"2rem", margin:"auto"}}>
+          {currentTheme === "dark" ? <BsFillBrightnessHighFill className={NavbarStyles.sun}/> :  <BsFillMoonFill className={NavbarStyles.moon}/>}
           </ListItem>
         </List>
       </Drawer>

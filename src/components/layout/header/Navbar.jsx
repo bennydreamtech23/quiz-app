@@ -1,4 +1,3 @@
-
 import {
   AppBar,
   Toolbar,
@@ -9,21 +8,21 @@ import {
   useMediaQuery,
    Box 
 } from "@material-ui/core";
-
-//import Toggle from '../../Toggle/Toggle'
 import { Link} from "react-router-dom";
 import Links from "../header/Links";
-//import Toggle from '../Toggle/Toggle'
+//import React, { useState } from 'react';
 import logo from "../../../assets/Group 1 1.png";
+import NavbarStyles from "./Navbar.module.scss";
+import {BsFillBrightnessHighFill, BsFillMoonFill} from "react-icons/bs";
 
 const useStyles = makeStyles((theme) => ({
   appBar:{
     backgroundColor: "transparent",
       boxShadow: '0px 0px 0px 0px',
-    transition: theme.transitions.create(["width", "margin"], {
+  /*  transition: theme.transitions.create(["width", "margin"], {
      easing: theme.transitions.easing.sharp,
     duration: theme.transitions.duration.leavingScreen,
-    }),
+    }),*/
   },
   navlinks: {
     display: "flex",
@@ -39,9 +38,9 @@ const useStyles = makeStyles((theme) => ({
   },
   link: {
     textDecoration: "none",
-    color: "black",
+    color: "#32CD30",
     fontSize: "20px",
-     marginRight: "50px",
+     marginRight: theme.spacing(3),
     marginLeft: theme.spacing(5),
     "&:hover": {
       color: "green",
@@ -49,9 +48,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   active:{
-    marginRight: "50px",
+    //marginRight: "50px",
    textDecoration: "none",
-   color: "black",
+   color: "#32CD30",
     fontSize: "20px",
     "&:hover": {
       color: "green",
@@ -59,18 +58,36 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   btn: {
-  border: '1px  solid #1D4645',
+  border: '1px  solid #32CD30',
   background: 'transparent',
   transition: '0.3s ease',
    textDecoration: "none",
-    color: "black",
+    color: "#32CD30",
     fontSize: "20px",
-    marginLeft: theme.spacing(10),
+    marginLeft: theme.spacing(5),
+   marginRight: theme.spacing(5),
     padding: theme.spacing(1),
     borderRadius: "3px",
   '&:hover': {
     boxShadow: '0px 0px 0px 4px #1D4645',
-    color: "#1D4645"
+    color: "green"
+  }
+  },
+  
+    btn1: {
+  border: '1px  solid #32CD30',
+  background: 'transparent',
+  transition: '0.3s ease',
+   textDecoration: "none",
+    color: "#32CD30",
+    fontSize: "20px",
+    marginLeft: theme.spacing(3),
+   marginRight: theme.spacing(3),
+    padding: theme.spacing(1),
+    borderRadius: "3px",
+  '&:hover': {
+    boxShadow: '0px 0px 0px 4px #1D4645',
+    color: "green"
   }
   },
   toolbar: {
@@ -84,14 +101,22 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent:"flex-end",
   }
+  
 }));
 
-function NavBar() {
+function NavBar({changeTheme,  currentTheme}) {
   const  classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
-  
+ // const [lightMode, setLightMode] = useState(false)
+  /*
+    const changeModeHandler = () => {
+        document.body.classList.toggle('dark-theme-variables');
+        setLightMode(!lightMode)
+    }
+    */
   return (
+    <nav className="container-fluid m0-3 py-3">
     <AppBar position="static"  className={classes.appBar}>
       <CssBaseline />
       <Toolbar className={classes.toolbar}>
@@ -99,7 +124,7 @@ function NavBar() {
           <img src={logo} alt='logo' style= {{width: "80px"}}/>
         </Typography>
 {isMobile ? (
-          <Links />
+          <Links changeTheme={changeTheme} currentTheme={theme}/>
         ) : (
           <div className={classes.navlinks}>
             <Link to="/" className={classes.active}>
@@ -121,14 +146,18 @@ function NavBar() {
              <Link to="/" className={classes.btn}>
               Login
             </Link>
-             <Link to="/" className={classes.btn}>
+             <Link to="/" className={classes.btn1}>
              Sign Up
             </Link>
             </Box>
+            <Box className={NavbarStyles.toggle} onClick={changeTheme}>
+          {currentTheme === "dark" ? <BsFillBrightnessHighFill className={NavbarStyles.sun}/> :  <BsFillMoonFill className={NavbarStyles.moon}/>}
+          </Box>
           </div>
         )}
       </Toolbar>
     </AppBar>
+    </nav>
   );
 }
 

@@ -2,6 +2,8 @@
 
 /* Variables */
 :root{
+  --color-text:#0466c8;
+  --color-title: #32CD30;
   --color-primary: #7380ec;
   --color-danger: #ff7782;
   --color-success: #41f1b6;
@@ -9,7 +11,7 @@
   --color-white: #fff;
   --color-info-dark: #7d8da1;
   --color-info-light: #dce1eb;
-  --color-dark: #363949;
+  --color-dark:  #1D4645;
   --color-light: rgba(132, 139, 200, 0.18);
   --color-primary-variant: #111e88;
   --color-dark-variant: #677483;
@@ -23,9 +25,22 @@
   /* ======= neumorphic ======== */
   --neu-light: rgba(211, 211, 211, 0.2);
   --neu-dark: rgba(0,0,0,.2);
-
 }
-
+  
+  /* ========= Dark Theme Variable ========== */
+[data-theme = "dark"]{
+  --color-bg: #12131d;
+  --color-white: #202528;
+  --color-dark:  #1D4645;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0,0,0,0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+  --color-info-light: #616568;
+  --neu-light: rgba(225, 225, 225, 0.2);
+  --neu-dark: rgba(47, 47, 47, 0.2);
+  --bg-glass: linear-gradient(to bottom right, rgba(0, 0, 0, 0.3), rgba(34, 43, 43, 0.3)) ;
+  --color-light-bg: rgba(90, 90, 90, 0.1);
+}
 
 *{
   margin: 0;
@@ -38,47 +53,43 @@ html{
 }
 
 body {
-  font-family: 'Space Mono', monospace;
+  font-family: 'Space Mono', Commissioner;
 }
 
-.App{
+.app{
   background: var(--color-bg);
-  
 }
 
-html, body, .container{
-  overflow: visible;
+html, body, .app{
+  max-width: 100vw;
+  overflow-x: hidden;
 }
 
-main{
-  backdrop-filter: blur(4rem);
-  background-color: rgba(255, 255, 255,0.1);
+.m0-3{
+  margin: 0 1.5rem;
 }
 
-.danger{
-  color: var(--color-danger);
+.p0-3{
+  padding: 3rem 0;
 }
 
-.primary{
-  color: var(--color-primary);
-}
-
-.warning{
-  color: var(--color-warning);
-}
-
-.success{
-  color: var(--color-success);
-}
-
-@media only screen and (min-device-width: 280px) and (max-device-width: 1080px){
+@media only screen and (min-width: 280px) and (max-width: 1080px){
   html, 
   body,
-  .container{
+  .app{
     max-width: 100vw;
     overflow-x: hidden;
   }
-  .container::webkit-scrollbar{
+  .app::webkit-scrollbar{
     display: none;
   }
+}
+
+::webkit-scrollbar{
+  background-color: white;
+  width: 0.3rem;
+}
+
+::webkit-scrollbar-thumb{
+  background-color: var(--dark-blue);
 }
