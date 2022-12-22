@@ -2,7 +2,17 @@
 
 /* Variables */
 :root{
-  --color-text:#0466c8;
+  --yellow: #F5C32C;
+    --orange : #FCA61F;
+    --black : #242D49;
+    --gray : #788097;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    --darkpurple: #d368c7;
+  --color-text:#05b8e8;
   --color-title: #32CD30;
   --color-primary: #7380ec;
   --color-danger: #ff7782;
@@ -15,7 +25,7 @@
   --color-light: rgba(132, 139, 200, 0.18);
   --color-primary-variant: #111e88;
   --color-dark-variant: #677483;
-  --color-bg: #f6f6f9;
+  --color-bg: #e0f0f8;
   --color-light-bg: rgba(255, 255, 255,0.1);
 --dark-blue: #03045e;
   --box-shadow: 0 2rem 3rem var(--color-light);
@@ -29,6 +39,7 @@
   
   /* ========= Dark Theme Variable ========== */
 [data-theme = "dark"]{
+ --black : #fff;
   --color-bg: #12131d;
   --color-white: #202528;
   --color-dark:  #1D4645;
@@ -55,9 +66,25 @@ html{
 body {
   font-family: 'Space Mono', Commissioner;
 }
-
 .app{
   background: var(--color-bg);
+   color: var(--black); 
+   .link{
+  color: var(--black);
+  text-decoration: none;
+  font-size: 20px;
+     margin-right: 2rem;
+      margin-left: 2rem;
+}
+   .link:hover{
+        color: var(--orange);
+        border-bottom: 1px solid var(--orange);
+   }
+      .logo{
+    flex-grow: 1;
+    cursor: pointer;
+    color: var(--darkpurple);
+  }
 }
 
 html, body, .app{
@@ -72,6 +99,25 @@ html, body, .app{
 .p0-3{
   padding: 3rem 0;
 }
+
+.btn{
+  border-radius: 34px;
+  border: none;
+  font-size: 16px;
+  padding: 11px 26px;
+    color: var(--darkpurple);
+   border: 1px solid var(--darkpurple);
+  //box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
+     margin-right: 1rem;
+      margin-left: 1rem;
+}
+
+.btn:hover{
+  background: white;
+  cursor: pointer;
+  color: white;
+ background: var(--darkpurple);
+}  
 
 @media only screen and (min-width: 280px) and (max-width: 1080px){
   html, 
@@ -92,4 +138,11 @@ html, body, .app{
 
 ::webkit-scrollbar-thumb{
   background-color: var(--dark-blue);
+}
+.testimonyenvelope{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ margin: 0.5rem 0rem;
+  flex-direction: column;
 }

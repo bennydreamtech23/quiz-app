@@ -2,7 +2,6 @@
 .TestimonyContainer{
   margin-top: 3rem;
   padding: 1rem 2rem;
-  background: #fff;
   .headerSubTitleContact{
 font-family: 'Commissioner';
 font-style: normal;
@@ -12,16 +11,16 @@ line-height: 32px;
 /* identical to box height, or 178% */
 text-align: center;
 letter-spacing: 3px;
-text-transform: uppercase;
-color: #1D4645;
+text-transform: uppercase; 
   }
   
    .headerTitleContact{
-color:rgba(29, 70, 69, 1);
-font-family: 'Commissioner';
+color:var(--darkpurple);
+font-family: 'space Mono';
 font-style: normal;
 font-weight: 700;
-font-size: 54px;
+font-size: 48px;
+text-align: center;
 line-height: 64px;
 /* identical to box height, or 97% */
 text-align: center;
@@ -44,6 +43,7 @@ flex-direction: column;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: black;
 }
   }
   
