@@ -2,24 +2,35 @@
 .headerHero{
   overflow-x: hidden;
   width: 100%;
+  
+  .headerContent{
+    display: flex;
+    //flex-direction: row;
+     @media only screen and (min-width: 320px) and  (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+}
+  }
   .headerBox{
     padding: 32px;
  @media only screen and (min-width: 320px) and  (max-width: 480px){
    padding: 0px ;
 }
   }
+  
   .headerTitle{
 font-family: 'Space Mono';
 font-style: normal;
 font-weight: 700;
-font-size: 72px;
+font-size: 65px;
 line-height: 80px;
-color: var(--color-title);
+color: var( --darkpurple);
   @media only screen and (min-width: 320px) and  (max-width: 480px){
   font-size: 52px;
   line-height: 60px;
 }
   }
+  
   .headerSubtitle{
 font-family: 'Space Mono';
 font-style: normal;
@@ -32,26 +43,25 @@ line-height: 32px;
 }
 }
 .headerInput{
-  box-sizing: border-box;
+box-sizing: border-box;
 width: 272px;
 height: 62px;
-background: #F2F2F2;
 border:none;
 margin-bottom: 0.5rem;
 }
+
 .headerBtn{
-font-family: 'Commissioner';
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 17px;
 text-align: center;
 text-transform: uppercase;
-background: #E8C5B0;
+background: var(--darkpurple);
 border-radius: 4px;
 height: 62px;
 border: none;
-color: rgba(29, 70, 69, 1);
+color: white;
 padding: 1rem 1rem;
 }
 
@@ -64,27 +74,25 @@ padding: 1rem 1rem;
 }
 
 .headerBottom{
-font-family: 'Commissioner';
+font-family: 'space Mono';
 font-style: normal;
 font-weight: 500;
 font-size: 25px;
 line-height: 31px;
 text-transform: uppercase;
-color: #000000;
   @media only screen and (min-width: 320px) and (max-width: 480px){
   font-size: 20px;
 }
 }
 
 .headerBottomSub{
-font-family: 'Commissioner';
+font-family: 'space Mono';
 font-style: normal;
 font-weight: 500;
 font-size: 25px;
 line-height: 31px;
 text-transform: uppercase;
-color: rgba(29, 70, 69, 1);
-  font-size: 40px;
+color: var( --darkpurple);
+font-size: 40px;
 }
-
 }

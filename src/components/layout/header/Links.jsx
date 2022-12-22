@@ -6,7 +6,6 @@ import {
   ListItem,
   ListItemText,
  makeStyles,
- Box
 } from "@material-ui/core";
 import NavbarStyles from "./Navbar.module.scss";
 import { Link } from "react-router-dom";

@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+//import Button from 'react-bootstrap/Button';
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import contactStyles from "./Contact.module.scss";
 const Contact = () =>{
@@ -37,9 +37,9 @@ const Contact = () =>{
           style={{ height: '100px' }}
         />
       </FloatingLabel>
-      <Button  className='mt-3' variant='success' type="submit">
+      <button  className='btn mt-3' type="submit">
         Submit
-      </Button>
+      </button>
     </Form>
       </Card.Body>
     </Card>
