@@ -89,16 +89,21 @@ const classes = useStyles();
               <Link to="/about" className={classes.link}>Contact</Link>
             </ListItemText>
           </ListItem>
+                    <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
+            <ListItemText>
+              <Link to="/dashboard" className={classes.link}>Dashboard</Link>
+            </ListItemText>
+          </ListItem>
            <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
             <ListItemText>
-             <Link to="/" className={classes.btn}>
+             <Link to="/login" className={classes.btn}>
               Login
             </Link>
             </ListItemText>
           </ListItem>
            <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
             <ListItemText>
-             <Link to="/" className={classes.btn}>
+             <Link to="/signup" className={classes.btn}>
              Sign Up
             </Link>
             </ListItemText>
