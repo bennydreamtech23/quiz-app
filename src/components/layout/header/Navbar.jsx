@@ -73,14 +73,14 @@ function NavBar({changeTheme,  currentTheme}) {
             <Link to="/" className="link">
               Contact
             </Link>
-             <Link to="/" className="link">
+             <Link to="/dashboard" className="link">
             Dashboard
             </Link>
             <Box className={classes.Box}>
-             <Link to="/" className="btn">
+             <Link to="/login" className="btn">
               Login
             </Link>
-             <Link to="/" className="btn">
+             <Link to="/signup" className="btn">
              Sign Up
             </Link>
             </Box>
