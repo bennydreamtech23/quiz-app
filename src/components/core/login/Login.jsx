@@ -1,3 +1,7 @@
+import imghero from "../../../assets/heroimage.png";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 import LoginStyles from "./Login.module.scss";
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
@@ -20,9 +24,10 @@ function Login() {
 
   
   return (
-    <div className={LoginStyles.login}>
-      <div className={LoginStyles.login__container}>
-        <input
+    <Container className={LoginStyles.login}>
+   <Row>
+      <Col className="col-md d-flex flex-column justify-content-center align-items-center">
+ <input
           type="text"
           className={LoginStyles.login__textBox}
           value={email}
@@ -36,23 +41,36 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
+        
+        <div className="d-flex flex-column justify-content-center">
         <button
-          className={LoginStyles.login__btn}
+          className="btn mb-3"
           onClick={() => logInWithEmailAndPassword(email, password)}
         >
           Login
         </button>
-        <button className={LoginStyles.login__google} onClick={signInWithGoogle}>
+        <button className="btn" onClick={signInWithGoogle}>
           Login with Google
         </button>
-        <div>
-          <Link to="/reset">Forgot Password</Link>
         </div>
-        <div>
-          Don't have an account? <Link to="/signup">Register</Link> now.
+        <div className="col-md d-flex flex-column justify-content-center">
+          <Link to="/reset" className="link">Forgot Password</Link>
         </div>
-      </div>
-    </div>
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <p>
+          Don't have an account?
+          </p>
+        <button className="btn">
+        <Link to="/signup" className="link">Register</Link> 
+        </button>
+        </div>
+</Col>
+      
+    <Col>
+      <img src={imghero} alt="contact card" className="col-md"/>
+      </Col>
+      </Row>
+    </Container>
   );
 }
 export default Login;

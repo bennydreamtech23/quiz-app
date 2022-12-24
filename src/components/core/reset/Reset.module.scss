@@ -1,11 +1,13 @@
 
 .reset {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  //width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+flex-direction: column;
 }
+
 .reset__container {
   display: flex;
   flex-direction: column;
@@ -17,6 +19,8 @@
   padding: 10px;
   font-size: 18px;
   margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
 }
 .reset__btn {
   padding: 10px;

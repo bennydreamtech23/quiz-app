@@ -1,84 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+      <Form.Group className="mb-3" controlId="formBasicName">
+        <Form.Label>FULL NAME</Form.Label>
+        <Form.Control type="text" placeholder="full name"
+        className={signupStyles.register__textBox}
+          value={name}
+          onChange={(e) => setName(e.target.value)}/>
+      </Form.Group>
+      
 
-/* Variables */
-:root{
-  --color-primary: #7380ec;
-  --color-danger: #ff7782;
-  --color-success: #41f1b6;
-  --color-warning: #ffbb55;
-  --color-white: #fff;
-  --color-info-dark: #7d8da1;
-  --color-info-light: #dce1eb;
-  --color-dark: #363949;
-  --color-light: rgba(132, 139, 200, 0.18);
-  --color-primary-variant: #111e88;
-  --color-dark-variant: #677483;
-  --color-bg: #f6f6f9;
-  --color-light-bg: rgba(255, 255, 255,0.1);
---dark-blue: #03045e;
-  --box-shadow: 0 2rem 3rem var(--color-light);
-  --transition: all 500ms ease;
-  --bg-glass: linear-gradient(to bottom right, rgba(255, 255, 255, 0.2), rgba(212, 247, 249, 0.2)) ;
-
-  /* ======= neumorphic ======== */
-  --neu-light: rgba(211, 211, 211, 0.2);
-  --neu-dark: rgba(0,0,0,.2);
-
-}
-
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html{
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Space Mono', monospace;
-}
-
-.App{
-  background: var(--color-bg);
+<Form.Group className="mb-3" controlId="formBasicEmail">
+        <Form.Label>EMAIL</Form.Label>
+        <Form.Control type="email" placeholder="email"
+        className={signupStyles.register__textBox}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}/>
+        <Form.Text className="text-muted">
+          We'll never share your email with anyone else.
+        </Form.Text>
+      </Form.Group>
+      
+      <Form.Group className="mb-3" controlId="formBasicPassword">
+        <Form.Label>PASSWORD</Form.Label>
+        <Form.Control type="password" placeholder="password"
+        className={signupStyles.register__textBox}
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}/>
+      </Form.Group>
   
-}
-
-html, body, .container{
-  overflow: visible;
-}
-
-main{
-  backdrop-filter: blur(4rem);
-  background-color: rgba(255, 255, 255,0.1);
-}
-
-.danger{
-  color: var(--color-danger);
-}
-
-.primary{
-  color: var(--color-primary);
-}
-
-.warning{
-  color: var(--color-warning);
-}
-
-.success{
-  color: var(--color-success);
-}
-
-@media only screen and (min-device-width: 280px) and (max-device-width: 1080px){
-  html, 
-  body,
-  .container{
-    max-width: 100vw;
-    overflow-x: hidden;
-  }
-  .container::webkit-scrollbar{
-    display: none;
-  }
-}
+      <Form.Group className="mb-3 d-flex justify-content-center"
+      controlId="formBasicCheckbox">
+      <button className="btn" type="submit" onClick={register}>
+        Register
+      </button>
+    
+     <button
+          className="btn"
+          onClick={signInWithGoogle}>
+          Register with Google
+        </button>
+      </Form.Group>
+      
+       <Form.Group class="d-flex justify-content-center">
+               <Form.Text className="text-muted mt-3">
+          Already Register
+        </Form.Text>
+          <button className="btn"><Link to="/login" className="link">Login
+          </Link></button>
+          </Form.Group>
+        
+    </Form>
+    
+    
+        <input
+          type="text"
+          className="register__textBox"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Full Name"
+        />
+        <input
+          type="text"
+          className="register__textBox"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          placeholder="E-mail Address"
+        />
+        <input
+          type="password"
+          className="register__textBox"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+          placeholder="Password"
+        />
+    
+    

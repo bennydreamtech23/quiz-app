@@ -10,10 +10,15 @@ import {
 } from "@material-ui/core";
 import { Link} from "react-router-dom";
 import Links from "../header/Links";
-//import React, { useState } from 'react';
-//import logo from "../../../assets/logo.png";
 import NavbarStyles from "./Navbar.module.scss";
 import {BsFillBrightnessHighFill, BsFillMoonFill} from "react-icons/bs";
+
+//logout react properties
+import { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
+import { auth, logout} from "../../core/login/firebase";
+
 
 const useStyles = makeStyles((theme) => ({
   appBar:{
@@ -46,6 +51,31 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 function NavBar({changeTheme,  currentTheme}) {
+  //logout function
+  const [user, loading] = useAuthState(auth);
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate("/");
+  }, [user, loading]);
+
+  // CTA -- CALL TO ACTIION
+  const CTA = !user ? (
+    <>
+   <Link to="/login" className="btn">
+              Login
+            </Link>
+             <Link to="/signup" className="btn">
+             Sign Up
+            </Link>
+    </>
+  ) : (
+    <button className="btn" onClick={logout}>
+      Log out
+    </button>
+  );
+
   const  classes = useStyles();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
@@ -55,7 +85,7 @@ function NavBar({changeTheme,  currentTheme}) {
       <CssBaseline />
       <Toolbar className={classes.toolbar}>
         <Typography variant="h5" className="logo">
-          Ultimatium Arena
+         <Link to="/" className="logo"> Ultimatium Arena</Link>
         </Typography>
 {isMobile ? (
           <Links changeTheme={changeTheme} currentTheme={theme}/>
@@ -73,16 +103,16 @@ function NavBar({changeTheme,  currentTheme}) {
             <Link to="/" className="link">
               Contact
             </Link>
-             <Link to="/dashboard" className="link">
-            Dashboard
-            </Link>
-            <Box className={classes.Box}>
-             <Link to="/login" className="btn">
-              Login
-            </Link>
-             <Link to="/signup" className="btn">
-             Sign Up
-            </Link>
+             {user ? (
+        <Link
+          to={`/dashboard`}
+          className="link"
+        >
+          Dashboard
+        </Link>
+      ) : null}
+         <Box className={classes.Box}>
+{CTA}
             </Box>
             <Box className={NavbarStyles.toggle} onClick={changeTheme}>
           {currentTheme === "dark" ? <BsFillBrightnessHighFill className={NavbarStyles.sun}/> :  <BsFillMoonFill className={NavbarStyles.moon}/>}
