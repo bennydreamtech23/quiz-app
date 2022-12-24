@@ -1,4 +1,4 @@
-import {useState} from "react";
+import {useState,useEffect} from "react";
 import {
   Drawer,
   IconButton,
@@ -10,6 +10,12 @@ import {
 import NavbarStyles from "./Navbar.module.scss";
 import { Link } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu"; 
+
+//logout react properties
+import { useAuthState } from "react-firebase-hooks/auth";
+import { useNavigate } from "react-router-dom";
+import { auth, logout} from "../../core/login/firebase";
+
 import {BsFillBrightnessHighFill, BsFillMoonFill} from "react-icons/bs";
 const drawerWidth = 240;
 
@@ -51,7 +57,7 @@ borderRadius: "3px",
     },
     listItem:{
       display: "flex",
-      justifyContent:"flex-end",
+      justifyContent:"center",
       textAlign:"center",
       marginTop: theme.spacing(3),
     },
@@ -61,6 +67,35 @@ const Links = ({changeTheme,  currentTheme}) =>  {
 const classes = useStyles();
   //const theme = useTheme();
   const [openDrawer, setOpenDrawer] = useState(false);
+  
+  
+   //logout function
+  const [user, loading] = useAuthState(auth);
+  const navigate = useNavigate();
+  
+  useEffect(() => {
+    if (loading) return;
+    if (!user) return navigate("/");
+  }, [user, loading]);
+
+  // CTA -- CALL TO ACTIION
+  const CTA = !user ? (
+    <>
+    <div className="d-flex flex-column justify-content-center align-items-center">
+   <Link to="/login" className="btn mb-3">
+              Login
+            </Link>
+             <Link to="/signup" className="btn">
+             Sign Up
+            </Link>
+            </div>
+    </>
+  ) : (
+    <button className="btn" onClick={logout}>
+      Log out
+    </button>
+  );
+  
   return (
     <>
       <Drawer
@@ -91,23 +126,22 @@ const classes = useStyles();
           </ListItem>
                     <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
             <ListItemText>
-              <Link to="/dashboard" className={classes.link}>Dashboard</Link>
+             {user ? (
+        <Link
+          to={`/dashboard`}
+          className="link"
+        >
+          Dashboard
+        </Link>
+      ) : null}
             </ListItemText>
           </ListItem>
+          
            <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
-            <ListItemText>
-             <Link to="/login" className={classes.btn}>
-              Login
-            </Link>
-            </ListItemText>
+         {CTA}
+         
           </ListItem>
-           <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
-            <ListItemText>
-             <Link to="/signup" className={classes.btn}>
-             Sign Up
-            </Link>
-            </ListItemText>
-          </ListItem>
+          
         <ListItem className={NavbarStyles.toggle} onClick={changeTheme}
         style={{width: "50px", display: "flex", alignItems: "center", justifyContent:"center", marginTop:"2rem", margin:"auto"}}>
           {currentTheme === "dark" ? <BsFillBrightnessHighFill className={NavbarStyles.sun}/> :  <BsFillMoonFill className={NavbarStyles.moon}/>}

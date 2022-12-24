@@ -1,4 +1,8 @@
-
+import imghero from "../../../assets/heroimage.png";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+//import Form from 'react-bootstrap/Form';
 import React, { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
@@ -15,26 +19,36 @@ function Reset() {
     if (user) navigate("/dashboard");
   }, [user, loading]);
   return (
-    <div className={resetStyle.reset}>
-      <div className={resetStyle.reset__container}>
-        <input
+    <Container fluid className={resetStyle.reset}>
+    <Row>
+      <Col className="col-md d-flex flex-column justify-content-center align-items-center">
+      
+<input
           type="text"
           className={resetStyle.reset__textBox}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail Address"
         />
-        <button
-          className={resetStyle.reset__btn}
-          onClick={() => sendPasswordReset(email)}
-        >
+        <button className="btn" onClick={() => sendPasswordReset(email)}>
           Send password reset email
         </button>
-        <div>
-          Don't have an account? <Link to="/register">Register</Link> now.
+
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <p>
+          Don't have an account?
+          </p>
+        <button className="btn">
+        <Link to="/signup" className="link">Register</Link> 
+        </button>
         </div>
-      </div>
-    </div>
+      </Col>
+      
+    <Col>
+      <img src={imghero} alt="contact card" className="col-md"/>
+      </Col>
+      </Row>
+    </Container>
   );
 }
 export default Reset;
