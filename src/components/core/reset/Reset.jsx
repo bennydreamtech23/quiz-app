@@ -20,7 +20,12 @@ function Reset() {
   }, [user, loading]);
   return (
     <Container fluid className={resetStyle.reset}>
-    <Row>
+    
+    <Row className="d-flex flex-row-reverse">
+     <Col className="col-md d-flex justify-content-center flex-column mb-3">
+      <img src={imghero} alt="contact card"/>
+      </Col>
+      
       <Col className="col-md d-flex flex-column justify-content-center align-items-center">
       
 <input
@@ -42,10 +47,6 @@ function Reset() {
         <Link to="/signup" className="link">Register</Link> 
         </button>
         </div>
-      </Col>
-      
-    <Col>
-      <img src={imghero} alt="contact card" className="col-md"/>
       </Col>
       </Row>
     </Container>

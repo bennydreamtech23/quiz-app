@@ -1,8 +1,7 @@
 
-.TestimonyContainer{
+.contactContainer{
   margin-top: 3rem;
   padding: 1rem 2rem;
-  color: black;
   .headerSubTitleContact{
 font-family: 'Commissioner';
 font-style: normal;
@@ -39,7 +38,13 @@ text-align: center;
    @media only screen and (min-width: 320px) and  (max-width: 768px){
 flex-direction: column;
 }
- 
+  .testimonyBox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
   }
   
   .testimonyCard{
