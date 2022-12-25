@@ -1,75 +1,212 @@
-      <Form.Group className="mb-3" controlId="formBasicName">
-        <Form.Label>FULL NAME</Form.Label>
-        <Form.Control type="text" placeholder="full name"
-        className={signupStyles.register__textBox}
-          value={name}
-          onChange={(e) => setName(e.target.value)}/>
-      </Form.Group>
-      
-
-<Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>EMAIL</Form.Label>
-        <Form.Control type="email" placeholder="email"
-        className={signupStyles.register__textBox}
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}/>
-        <Form.Text className="text-muted">
-          We'll never share your email with anyone else.
-        </Form.Text>
-      </Form.Group>
-      
-      <Form.Group className="mb-3" controlId="formBasicPassword">
-        <Form.Label>PASSWORD</Form.Label>
-        <Form.Control type="password" placeholder="password"
-        className={signupStyles.register__textBox}
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}/>
-      </Form.Group>
+  <div class="container-fluild container8 p-3">
+<div class="row">
+  <div class="col-md">
+    <h3>Provide better security and control for residential and business customers.</h3>
+    <a href="#">Compare Security Options!</a>
+  </div>
   
-      <Form.Group className="mb-3 d-flex justify-content-center"
-      controlId="formBasicCheckbox">
-      <button className="btn" type="submit" onClick={register}>
-        Register
-      </button>
-    
-     <button
-          className="btn"
-          onClick={signInWithGoogle}>
-          Register with Google
-        </button>
-      </Form.Group>
+  <div class="col-md">
+       <div class="scrolling">
+     <div style="white-space:nowrap;"
+    id="col">
+      <div class="scrolling-col-techbrand">
+         <p>TECHBRAND</p>
+      </div>
       
-       <Form.Group class="d-flex justify-content-center">
-               <Form.Text className="text-muted mt-3">
-          Already Register
-        </Form.Text>
-          <button className="btn"><Link to="/login" className="link">Login
-          </Link></button>
-          </Form.Group>
+      <div class="scrolling-col-Sauter">
+          <p>Sauter</p>
+      </div>
+      
+      <div class="scrolling-col-evolved">
+      <p>Evolved</p>
+      </div>
+      
+      <div class="scrolling-col-sMatrics">
+       <p>SMatrics</p>
+      </div>
+      
+      <div class="scrolling-col-techbrand">
+         <p>TECHBRAND</p>
+      </div>
+      
+      <div class="scrolling-col-Sauter">
+          <p>Sauter</p>
+      </div>
+      
+      <div class="scrolling-col-evolved">
+      <p>Evolved</p>
+      </div>
+      
+      <div class="scrolling-col-sMatrics">
+       <p>SMatrics</p>
+      </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
+
+<div class="container-fluild container8 p-5">
+    <h2>Analytics That Give Meaning To Security Data</h2>
+    <h1 class="text-center">Explore Our Case Studies & Latest Success Stories.</h1>
+    
+ <div class="row"
+ id="gallery-work">
+      <div class="col-md">
+     <div class="bg-1">
+       <button id="bg-1-button">Detection, Fire Alarm</button>
+       </div>
+       
+       <div class="small">
+         <h2>Getting The Right Fire Alarm Detection System Online</h2>
+         <p>The systems feature manual call and sounder devices wirelessly linked to main panel. Whilst wireless systems are more expensive than hard wired standard versions.
+        </p>
+        <a href="/case study grid.html" id="overlay-btn2"> &larr; Explore More</a>
+       </div>
+     </div>
+     
+        <div class="col-md">
+     <div class="bg-2">
+       <button id="bg-1-button">Security, Cctv</button>
+       </div>
+       
+       <div class="small">
+         <h2>Helping Manufacturers With Workplace Essential Safety</h2>
+         <p>The systems feature manual call and sounder devices wirelessly linked to main panel. Whilst wireless systems are more expensive than hard wired standard versions.
+        </p>
+        <a href="/case study grid.html" id="overlay-btn2">&larr; Explore More</a>
+       </div>
+     </div>
+     </div>
+     
+     <div class="row"
+     id="gallery-work">
+        <div class="col-md">
+     <div class="bg-3">
+       <button id="bg-1-button">Resources, Security</button>
+       </div>
+       
+       <div class="small">
+         <h2>Vendors With Resources Safety & Security</h2>
+         <p>The systems feature manual call and sounder devices wirelessly linked to main panel. Whilst wireless systems ate more expensive than hard wired standard versions.
+        </p>
+        <a href="/case study grid.html" id="overlay-btn2">&larr; Explore More</a>
+       </div>
+     </div>
+     
+        <div class="col-md">
+     <div class="bg-4">
+       <button id="bg-1-button">Detection, Fire Alarm</button>
+       </div>
+       
+       <div class="small">
+         <h2>Home Security For The Front And Back Of Your House</h2>
+         <p>The systems feature manual call and sounder devices wirelessly linked to main panel. Whilst wireless systems ate more expensive than hard wired standard versions.
+        </p>
+        <a href="/case study grid.html" id="overlay-btn2">&larr; Explore More</a>
+       </div>
+     </div>
+     
+        <div class="col-md">
+     <div class="bg-5">
+       <button id="bg-1-button">CCTV Security Camera</button>
+       </div>
+       
+       <div class="small">
+         <h2>Expert's Guild To Security For Rental Properties </h2>
+         <p>The systems feature manual call and sounder devices wirelessly linked to main panel. Whilst wireless systems ate more expensive than hard wired standard versions.
+        </p>
+        <a href="/case study grid.html" id="overlay-btn2">&larr; Explore More</a>
+       </div>
+     </div>
+ </div>
+<div class="down-article">
+  <div>
+    <h1 class="text-center">...</h1>
+  </div>
+  <h3>Explore All Cases</h3>
+</div>
+</div>
+
+
+
+    <div class="row">
+    <div class="col-md" id="schedule-box">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active"
+    id="active">
+      <h1>Starter Plan</h1>
+      <p>Our Highly trained technicians will set up your security system so you don't bhave to. They show you how to work your equipment</p>
+        <h2><i class="bi bi-check"></i> Enterprise Network Video Recorders</h2>
+        <h2><i class="bi bi-check"></i> Streaming video network or internet</h2>
         
-    </Form>
+        <h4>$59/<strong>Month</strong></h4>
+        <a href="#" id="overlay-btn2">Get Started Now &rarr;</a>
+    </div>
     
+    <div class="carousel-item" 
+    id="active2">
+     <h1>Professional Plan</h1>
+      <p>Our Highly trained technicians will set up your security system so you don't bhave to. They show you how to work your equipment</p>
+        <h2><i class="bi bi-check"></i> Enterprise Network Video Recorders</h2>
+        <h2><i class="bi bi-check"></i> Streaming video network or internet</h2>
+     <h2><i class="bi bi-check"></i> Intelligent Video technology storage</h2>
+        <h4>$159/<strong>Month</strong></h4>
+        <a href="#" id="overlay-btn2">Get Started Now &rarr;</a>
+    </div>
     
-        <input
-          type="text"
-          className="register__textBox"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          placeholder="Full Name"
-        />
-        <input
-          type="text"
-          className="register__textBox"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
-        />
-        <input
-          type="password"
-          className="register__textBox"
-          value={password}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
-        />
-    
-    
+    <div class="carousel-item">
+    <h1>Business Plan</h1>
+      <p>Our Highly trained technicians will set up your security system so you don't bhave to. They show you how to work your equipment</p>
+        <h2><i class="bi bi-check"></i> Enterprise Network Video Recorders</h2>
+        <h2><i class="bi bi-check"></i> Streaming video network or internet</h2>
+        
+        <h2><i class="bi bi-check"></i> Intelligent video technology storage</h2>
+        
+         <h2><i class="bi bi-check"></i> Network with distributed video</h2>
+         
+          <h2><i class="bi bi-check"></i> Advanced management software</h2>
+        <h4>$259/<strong>Month</strong></h4>
+        <a href="#" id="overlay-btn2">Get Started Now &rarr;</a>
+    </div>
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </div>
+ </div>
+ 
+ 
+ <div class="scrollable">
+  <ul>
+    <li><div></div>Security Monitoring Equipment</li>
+    <li><div></div>Fire Monitor And Detection</li>
+    <li><div></div>Remote Arm And Disarm</li>
+   <li><div></div>Smart Home Controls</li>
+   <li><div></div>Live Stream From Any Mobile</li>
+   <li><div></div>Alerts, Schedules & Automations</li>
+    <li><div></div>Record And Save Video Clips</li>
+    <li><div></div>Alarm Monitoring 24/7</li>
+    <li><div></div>Lifetime Rate Lock Guarantee</li>
+    <li><div></div>Lifetime Equipment Warranty</li>
+    <li><div></div>Easy And Fair Cancellation</li>
+    <li><div></div>Professional Grade Protection</li>
+  </ul>
+  </div>

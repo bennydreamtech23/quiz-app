@@ -2,7 +2,8 @@ import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
 
 //external pages
 import LandingPage from "./components/pages/landing-page/LandingPage";
-
+import Contact from "./components/pages/contact/Contact";
+import Service from "./components/pages/services/Services";
 //cta pages
 import Signup from "./components/core/signup/Signup";
 import Login from "./components/core/login/Login";
@@ -30,7 +31,8 @@ function App() {
       <Routes>
         {/* external pages */}
         <Route path="/" element={<LandingPage />} />
-    
+         <Route path="/contact" element={<Contact/>} />
+      <Route path="/services" element={<Service/>} />
      {/*CTA PAGES*/}
       <Route path="/signup" element={<Signup/>} />
       <Route path="/login" element={<Login/>} />

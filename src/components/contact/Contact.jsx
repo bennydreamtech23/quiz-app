@@ -1,17 +1,22 @@
+
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-//import Button from 'react-bootstrap/Button';
+import ContactHero from "./../../assets/contactHero.png";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import contactStyles from "./Contact.module.scss";
 const Contact = () =>{
   return(
     <>
-   <Container fluid className={contactStyles.TestimonyContainer}>
-    <Row>
-     <Col className={contactStyles.testimonyBox}>
+   <Container fluid className={contactStyles.contactContainer}>
+    <Row className="d-flex flex-row-reverse">
+      
+    <Col className="col-md d-flex justify-content-center flex-column">
+<img src={ContactHero} alt="HeroSectionimg"/>
+</Col>
+     <Col className='col-md testimonyBox'>
     <Card className={contactStyles.testimonyCard}>
       <Card.Body  className={contactStyles.CardContent}>
       <Card.Text className={contactStyles.headerSubTitleContact}>CONTACT US</Card.Text>

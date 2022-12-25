@@ -11,10 +11,15 @@ const HeroSection = () =>{
   return(
 <header className={styles.headerHero}>
 <Container fluid className="p-5">
-<Row>
+<Row className="d-flex flex-row-reverse">
+
+ <Col className="col-md d-flex justify-content-center flex-column mb-3">
+      <img src={imghero} alt="contact card"/>
+      </Col>
+      
 <Col className="col-md">
 <h1 className={styles.headerTitle}>
-play Online Challenge & improve in your stack Daily!
+Get Better with Online Challenge & improve in your stack Daily!
 </h1>
 <p className={styles.headerSubtitle}>
 Get better daily with CODEBASE CHALLENGE
@@ -27,10 +32,6 @@ REGISTER NOW
 <h1 className={styles.headerBottom}> OF ACTIVE USERS RIGHT</h1>
 <h3 className={styles.headerBottomSub}>20,000+</h3>
 </div>
-</Col>
-
-<Col className="col-md d-flex justify-content-center">
-<img src={imghero} alt="HeroSectionimg"/>
 </Col>
 </Row>
 </Container>

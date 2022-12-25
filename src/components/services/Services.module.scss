@@ -1,0 +1,41 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+ .headerTitle{
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 80px;
+text-align: center;
+  @media only screen and (min-width: 320px) and  (max-width: 480px){
+  font-size: 20px;
+  line-height: 60px;
+}
+  }
+
+ 
+.timelinecontainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 40px 0;
+}
+
+.timelinecontainer::after {
+    background-color: var(--darkpurple);
+    content: '';
+    position: absolute;
+    left: calc(50% - 2px);
+    width: 4px;
+    height: 100%;
+    border-radius: 2px;
+}
+
+.TimelineHeader {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    padding: 10px 5px;
+}

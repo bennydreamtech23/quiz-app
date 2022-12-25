@@ -34,7 +34,10 @@ useEffect(() => {
   
   return (
     <Container fluid className={signupStyles.register}>
-    <Row>
+    <Row className="d-flex flex-row-reverse">
+        <Col className="col-md d-flex justify-content-center flex-column mb-3">
+      <img src={imghero} alt="contact card"/>
+      </Col>
       <Col className="col-md d-flex flex-column justify-content-center align-items-center">
       
         <input type="text"
@@ -77,10 +80,6 @@ useEffect(() => {
          <p> Already have an account? </p>
           <button className="btn"><Link className="link" to="/login">Login</Link></button>
         </div>
-      </Col>
-      
-      <Col>
-      <img src={imghero} alt="contact card" className="col-md"/>
       </Col>
       </Row>
     </Container>

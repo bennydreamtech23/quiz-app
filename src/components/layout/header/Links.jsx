@@ -52,9 +52,6 @@ borderRadius: "3px",
     marginLeft: theme.spacing(2),
     alignItems:"center",
   },
-    icon:{
-        color: "black",
-    },
     listItem:{
       display: "flex",
       justifyContent:"center",
@@ -111,7 +108,7 @@ const classes = useStyles();
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
             <ListItemText>
-              <Link to="/about" className={classes.link}>Services</Link>
+              <Link to="/services" className={classes.link}>Services</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
@@ -121,7 +118,7 @@ const classes = useStyles();
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
             <ListItemText>
-              <Link to="/about" className={classes.link}>Contact</Link>
+              <Link to="/contact" className={classes.link}>Contact</Link>
             </ListItemText>
           </ListItem>
                     <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
@@ -149,7 +146,7 @@ const classes = useStyles();
         </List>
       </Drawer>
       <IconButton onClick={() => setOpenDrawer(!openDrawer)}>
-        <MenuIcon className={classes.icon} />
+        <MenuIcon  className="link"/>
       </IconButton>
     </>
   );
