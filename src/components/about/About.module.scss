@@ -1,662 +1,157 @@
 
-    .bg-overlay h2{
-      color: white;
-      font-size: 17px;
-      font-weight: normal;
-      font-family: 'Noto Sans';
-      opacity: 0.7;
-    }
-    
-    .bg-overlay h1{
-      color: white;
-      font-size: 35px;
-      font-family: 'Noto Sans';
-      font-weight: bolder;
-    }
-    
-    .bg-overlay p{
-      color: white;
-      font-size: 15px;
-      opacity: 0.9;
-      font-family: 'Noto Sans';
-    }
-    
-    #overlay-btn{
-      border:none;
-      background: #f88000;
-      padding: 10px 15px;
-      border-radius: 2px;
-      color: white;
-      font-weight: bold;
-      transition: 0.5s;
-      margin-bottom: 10px;
-      text-decoration: none;
-    }
-    
-   #overlay-btn:hover{
-      background: #68b038;
-      transform: translateX(3px);
-    }
-    
-      #overlay-btn1:hover{
-      background: #68b038;
-      transform: translateX(3px);
-      color: white;
-    }
-    
-      #overlay-btn1{
-      border:none;
-      background: white;
-      padding: 10px 15px;
-      border-radius: 2px;
-      color: black;
-      font-weight: bold;
-      transition: 0.5s;
-      text-decoration: none;
-    }
-    
-    .bg-overlay .hidden{
-      background: white;
-      width: 200px;
-      height: 200px;
-      padding: 10px 15px;
-      box-shadow: 6px 7px 10px rgba(0,0,0,0.5);
-      margin-top: 10px;
-      margin-left: 150px;
-    }
-    
-    .hidden img{
-      width: 100px;
-      margin: 0 auto;
-      border: 2px solid #808888;
-      display: flex;
-    } 
-    
-    .hidden h1{
-      color: black;
-      font-size: 18px;
-      text-align: center;
-      font-family: 'Noto Sans';
-    }
-    
-    .hidden p{
-      font-size: 10px;
-      color: black;
-      line-height: 15px;
-      text-align: center;
-      padding:10px;
-      font-family: 'Noto Sans';
-    }
-    
-    .hidden2{
-      margin-top: 10px;
-      margin-left: 150px;
-    }
-    
-    .hidden2 span{
-      color: white;
-      font-size: 12px;
-    }
-    
-    /*----section2---*/
-    
-      #overlay-btn2:hover{
-      background: #68b038;
-      transform: translateX(3px);
-      color: white;
-    }
-    
-      #overlay-btn2{
-      border:none;
-      background: black;
-      padding: 10px 15px;
-      border-radius: 2px;
-      color: white;
-      font-weight: bold;
-      transition: 0.5s;
-      text-decoration: none;
-    }
-    
-.container4 h1{
-   margin-top: 10px;
-   font-size: 27px;
-   font-weight: bold;
-   font-family:'Noto Sans';
-   padding-top:5px;
+.about{
+  overflow-x: hidden;
+  width: 100%;
+}
+.img{
+  width: 600px;
+   @media only screen and (min-width: 320px) and  (max-width: 768px){
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+}
+.imgCard{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+  .headerContent{
+    display: flex;
+    //flex-direction: row;
+     @media only screen and (min-width: 320px) and  (max-width: 768px){
+    display: flex;
+    flex-direction: column;
+}
+  }
+  
+  .headerBox{
+    padding: 32px;
+ @media only screen and (min-width: 320px) and  (max-width: 480px){
+   padding: 0px ;
+}
+  }
+  
+  .headerTitle{
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 700;
+font-size: 55px;
+line-height: 80px;
+  @media only screen and (min-width: 320px) and  (max-width: 480px){
+  font-size: 40px;
+  line-height: 60px;
+}
+  }
+  
+  .headerSubtitle{
+font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 32px;
+  @media only screen and (min-width: 320px) and  (max-width: 480px){
+  font-size: 16px;
+  line-height: 20px;
+}
 }
 
-.container4 .img{
-   border-radius: 7px;
-   width: 350px;
-   margin-top: 25px;
-   margin-left: 70px;
-}
-
-#container4-text{
-   border-left: 5px solid #c0c0c0;
-   padding-left: 10px;
-}
-
-.container4 p{
-   padding-top: 5px;
-   font-family: 'Noto Sans';
-   font-size: 15px;
-   line-height: 30px;
-   margin-bottom: 10px;
-}
-
-.container4 a{
-   text-decoration: none;
-   color: black;
-}
-
-.container4 h2{
-   margin-top: 10px;
-   font-size: 21px;
-   font-weight: bold;
-   font-family:'Noto Sans';
-   padding-top:5px;
-}
-
-.container4 ul{
-   list-style: none;
-}
-
-.container4 li div{
-   width: 10px;
-   height: 10px;
-   background-color: #f88000;
-   display: inline-block;
-   margin-right: 10px;
-   border-radius: 50%;
-}
-
-.container4 li{
-   padding: 10px 15px;
-   border-bottom: 1px solid #c0c0c0;
-   font-size: 15px;
-   font-family: 'Noto Sans';
+.headerSubtitleBold{
+font-family: 'Space Mono';
+font-style: 700;
+font-weight: 400;
+font-size: 30px;
+line-height: 40px;
+ text-align: center;
 }
 
 
-/*-----section3-----*/
 
-
-.container5 p{
-   line-height: 30px;
-   padding-top: 5px;
-   font-family: 'Noto Sans';
-   font-size: 15px;
-   font-weight: 400;
+.headertext{
+  font-family: 'Space Mono';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
 }
 
-.container5 a{
-   text-decoration: none;
-   color: black;
+.headerBtn{
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+text-transform: uppercase;
+background: var(--darkpurple);
+border-radius: 4px;
+height: 62px;
+border: none;
+color: white;
+padding: 1rem 1rem;
 }
 
-.roller .col{
-   font-family:'Noto Sans';
-   font-weight: bold;
-   color: white;
-   border: 1px solid white;
-   transition: 0.5s;
-   width: 200px;
-   height: 250px;
+.headerContent{
    display: flex;
    flex-direction: column;
-   align-items: flex-start;
-   justify-content: space-around;
-}
-
-.roller .col:hover{
-   background: #68b038;
-   transform: translateY(-15px);
-   color: white;
-}
-
-.roller .col h3{
-   font-family: 'Noto Sans';
-   font-size: 22px;
-   color: white;
-   font-weight: bold;
-}
-
-.container5 h4{
-   font-family:'Noto Sans';
-   color: white;
-   font-size:19px;
-   font-weight: bold;
-   display: inline-block;
-}
-
-.container5 .small{
-   height: 50px;
-   width: 50px;
-   border-radius: 50%;
-   display: inline-block;
-   float: right;
-   background: #f88000;
-}
-
-.small .bi-arrow-up-circle{
-   margin: 0 auto;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   align-self: center;
-   margin-top: 10px;
-   color: #f88000;
-}
-
-.container5 h5{
-   font-family:'Noto Sans';
-   color: silver;
-   margin-top: 30px;
-   font-size:16px;
-}
-
-
-/*-----section4-----*/
-
-.container6{
-   background: #e8e8e8;
-}
-
-.container6 h1{
-   margin-top: 10px;
-   font-size: 27px;
-   font-weight: bold;
-   font-family:'Noto Sans';
-   padding-top:5px;
-}
-
-.container6 h2{
-   margin-top: 10px;
-   font-size: 23px;
-   font-weight: normal;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color: #f88000;
-}
-
-.container6 p{
-   line-height: 30px;
-   padding-top: 5px;
-   font-family: 'Noto Sans';
-   font-size: 15px;
-   font-weight: 400;
-}
-
-.container6 a{
-   text-decoration: none;
-   color: black;
-   font-weight: bold;
-   font-size: 17px;
-}
-
-.container6 #btn-1{
-   border-bottom: 2px solid #f88000;
-}
-
-.container6 .bi-arrow-right-circle-fill{
-   color: #f88000;
-}
-.container6 strong{
-   padding-top: 20px;
-   font-weight: normal;
-   font-size: 16px;
-   font-family: 'Noto Sans';
-}
-
-.roller1{
-   padding-top: 30px;
-}
-
-.roller1 .col{
-   font-family: 'Noto Sans';
-   font-weight: bold;
-   color: black;
-   transition: 0.5s;
-   height: 430px;
-   padding: 10px 15px;
-   background: white;
-   border: 0.5px solid #c0c0c0;
-}
-
-.roller1 .col:hover{
-   background: #68b038;
-   transform: translateY(-15px);
-   color: white;
-}
-
-.roller1 .col h1{
-   font-family:'Noto Sans';
-   font-size: 24px;
-   color: black;
-   font-weight: bold;
-}
-
-.roller1 .col p{
-   font-family: 'Noto Sans';
-   font-size: 15px;
-   color: black;
-   font-weight: normal;
-}
-
-.roller1 .col img{
-   margin-top: 10px;
-   width: 50px;
-}
-
-.container6 .info{
-   background: white;
-   margin-top: 10px;
-   padding: 10px 20px; 
-   display: flex;
-   align-items: center;
-   justify-content: space-around;
-   border-radius: 2px;
-}
-
-.info  > .bi-people-fill{
-   color: #808888;
-   background: black;
-   padding: 10px 10px;
-   border-radius: 50%;
-   margin: 0 auto;
-   display: flex;
-   font-size: 30px;
-}
-
- .info p{
-   font-family: 'Noto Sans';
-   font-size: 15px;
-   margin-left: 10px;
-   opacity: 0.6;
-}
-
-.info #btn-3{
-   border-bottom: 2px solid #f88000; 
-}
-
-.quote{
-   background: #68B038;
-   padding: 30px 20px; 
-   border-radius: 10px;
-   width: 100%;
    margin-top: 20px;
-   text-align: center;
-   transition: 0.5s;
+   //align-items: center;
+   justify-content: center;
 }
 
-.quote:hover{
-   background: #f88000;
-   transform: translateY(15px);
+.headerBottom{
+font-family: 'space Mono';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 31px;
+text-transform: uppercase;
+  @media only screen and (min-width: 320px) and (max-width: 480px){
+  font-size: 20px;
+}
 }
 
-.quote a{
-   font-size: 27px;
-   text-align: center;
-   font-family: 'Noto Sans';
-   font-weight: bold;
-   color: white;
-   border: 2px solid white;
-   padding: 5px 10px; 
-}
-
-
-/*-----section6-----*/
-
-.container7{
-   background: #181818;
-}
-.container7 h1{
-   margin-top: 10px;
-   font-size: 27px;
-   font-weight: bolder;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color: white;
-}
-
-.container7 h2{
-   margin-top: 10px;
-   font-size: 23px;
-   font-weight: normal;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color: #f88000;
-}
-
-.container7 h3{
-   margin-top: 10px;
-   font-size: 19px;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color:white;
-   font-weight: 400;
-}
-
-.container7 h4{
-   margin-top: 10px;
-   font-size: 19px;
-   font-weight: normal;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color:white;
-}
-
-.container7 p{
-   line-height: 30px;
-   padding-top: 5px;
-   font-family: 'Noto Sans';
-   font-size: 15px;
-   font-weight: 400;
-   color: white;
-   opacity: 0.7;
-}
-
-.container7 ul{
-   list-style: none;
-}
-
-.container7 li{
-   font-size: 16px;
-   color: white;
-}
-
-.container7 .bi-check{
-   color: #f88000;
-   font-size: 19px;
-}
-
- .bg-2 .small{
-   width: 230px;
-   height: 270px;
-   background: white;
-   display: flex;
-   flex-direction: column;
-   margin: 0 auto;
-   padding: 10px 15px;
-   box-shadow: 6px 8px 10px rgba(0,0,0,0.5);
-}
-
-.small h1{
-   font-size: 17px;
-   color: black;
-   font-family: 'Noto Sans';
-}
-
-.small p{
-   color: black;
-   font-size: 15px;
-   margin: 0px;
-   line-height: 20px;
-   font-family: 'Noto Sans';
-   font-weight: normal;
-}
-
-.small li{
-   color: black;
-   font-size: 15px;
-   font-family: 'Noto Sans';
-}
-
-.container7 .bg-3 .small-1{
-   width: 230px;
-   height: 270px;
-   background: #68b038;
-   display: flex;
-   flex-direction: column;
-   margin: 0 auto;
-   padding: 10px 15px;
-   box-shadow: 6px 8px 10px rgba(0,0,0,0.5);
-}
-
-.small-1 h1{
-   font-size: 17px;
-   color: white;
-   font-family: 'Noto Sans';
-}
-
-.small-1 p{
-   color: white;
-   font-size: 15px;
-   margin: 0px;
-   line-height: 20px;
-   font-family: 'Noto Sans';
-   font-weight: normal;
-}
-
-.small-1 li{
-   color: white;
-   font-size: 15px;
-   font-family: 'Noto Sans';
-}
-
-.small-1 .bi-check{
-   color: white;
-}
-
-.container7 h5{
-   margin-top: 10px;
-   font-size: 16px;
-   font-weight: normal;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color:white;
-   line-height: 30px;
-}
-
-.container7 a{
-   color: #f88000;
-   text-decoration: underline;
-}
-
-.container7 .bi-star-fill{
-   color: #f88000;
-}
-
-.container7 h6{
-   font-weight: normal;
-   font-size: 16px;
-   color: white;
-   opacity: 0.8;
-   font-family: 'Noto Sans';
-}
-
- #small-btn{
-   background: white;
-   color: black;
-   padding: 10px 15px;
-   border: none;
-   margin-bottom: 10px;
-   border-radius: 25px;
-   font-weight: bold;
-}
-
-#small-btn:hover{
-   background: #68b038;
-   color: white;
-}
-
-
-/*-----section7-----*/
-#gallery-work .col-md{
-   margin-bottom: 20px;
-   padding-bottom: 10px;
-}
-
-.container8 h1{
-   margin-top: 10px;
-   font-size: 27px;
-   font-weight: bolder;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color: black;
-}
-
-.small p{
-   margin-bottom: 20px;
-}
-
-.container8 p{
-   line-height: 30px;
-   padding-top: 5px;
-   font-family: 'Noto Sans';
-   font-size: 15px;
-   font-weight: 500;
-   color: black;
-   opacity: 0.7;
-   margin-bottom: 20px;
-}
-
-.container8 h3{
-   margin-top: 10px;
-   font-size: 18px;
-   font-weight: 500;
-   font-family:'Noto Sans';
-   padding-top:5px;
-   color: black;
-   text-align: left;
-}
-
-.container8 a{
-   color: #f88000;
-   text-decoration: underline;
-   font-weight: bold;
-   font-size: 17px;
-   font-family: 'Noto Sans';
+.headerBottomSub{
+font-family: 'space Mono';
+font-style: normal;
+font-weight: 500;
+font-size: 25px;
+line-height: 31px;
+text-transform: uppercase;
+color: var( --darkpurple);
+font-size: 40px;
 }
 
 
 /*scrolling-section*/
-.scrolling-col-techbrand{
+.scrollingcoltechbrand{
    display: inline;
    margin-right: 10px;
 }
 
-.scrolling-col-Sauter{
+.scrollingcolSauter{
    display: inline;
    margin-right: 10px;
 }
 
-.scrolling-col-evolved{
+.scrollingcolevolved{
    display: inline;
    margin-right: 10px;
 }
 
-.scrolling-col-sMatrics{
+.scrollingcolsMatrics{
    display: inline;
    margin-right: 10px;
 }
 
 
 /*---scrolling-section text---*/
-
-.scrolling-col-techbrand p{
+.scrollingcoltechbrand p{
   display: inline;
   font-weight: bold;
   font-family:'Noto Sans';
@@ -664,7 +159,7 @@
   font-size: 21px;
 }
 
-.scrolling-col-sMatrics p{
+.scrollingcolsMatrics p{
   display: inline;
   font-weight: bold;
   font-family:'Noto Sans';
@@ -672,7 +167,7 @@
   font-size: 21px;
 }
 
-.scrolling-col-Sauter p{
+.scrollingcolSauter p{
   display: inline;
   font-weight: bold;
   font-family:'Noto Sans';
@@ -680,7 +175,7 @@
   font-size: 21px;
 }
 
-.scrolling-col-evolved p{
+.scrollingcolevolved p{
   display: inline;
   font-weight: bold;
   font-family:'Noto Sans';
@@ -694,18 +189,20 @@
  overflow-x: scroll;
  float: right;
  color: white;
+ border: none;
 }
 
-#col{
+.col{
   padding: 0;
   margin: 30px;
   transform: translateX(100%);
-  animation-name:scrolling;
+  animation-name: scrolling;
   animation-duration:20s;
   transition-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
   position: relative;
+  border: none;
 }
 
 
@@ -716,249 +213,4 @@
 }
 
 /* End of scrolling section*/
-
-
-/*-----section8-----*/
-
-.container9{
-  background: #f88000;
-}
-
-.container9 h1{
-  font-size: 30px;
-  font-weight: bolder;
-  font-family:'Noto Sans';
-  color:white;
-}
-
-.container9 p{
-  line-height: 30px;
-  padding-top: 5px;
-  font-family: 'Noto Sans';
-  font-size: 15px;
-  font-weight: 500;
-  color: white;
-  opacity: 0.9;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
- #my-form{
-  background: white;
-  padding: 15px;
-  box-shadow: 7px 8px 10px rgba(0,0,0,0.3);
-  border-radius: 3px;
-}
-
-#my-form #home{
-  padding: 10px 15px;
-  display: block;
-  font-weight: bold;
-}
-
-.container9 .box{
-  border: 1px solid #c0c0c0;
-  padding: 10px 15px;
-  margin-bottom: 20px;
-  border-radius: 3px;
-}
-
-#my-form select{
-  padding: 10px 15px;
-  background: #e8e8e8;
-  border-radius: 3px;
-  border: none;
-}
-
-
-#my-form select:focus {
- outline: none;
-  }
-  
-   #my-form .name{
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    background: #e8e8e8;
-    color:black;
-    width: 100%;
-    border: none;
-    font-size: 17px;
-  }
-  
-  #my-form .name:focus{
-    outline: none;
-  }
-  
-   #name{
-    border: 2px solid black;
-  }
-  
-  #small{
-    margin-right: 10px;
-  }
-  
- .error{
-  background: #68b038;
-  color: white;
-  padding: 4px;
-  margin-bottom: 10px;
-}
-
-#submit{
-  width: 100%;
-  background: black;
-  color: white;
-  border-radius: 5px;
-  padding: 20px 0px;
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-#submit:hover{
-  border:2px solid black;
-  background: transparent;
-  color: black;
-}
-
-.container9 #schedule-box{
-  margin-top: 140px;
-}
-
-.carousel-inner p{
-  font-family: 'Noto Sans';
-  color: white;
-  padding-bottom: 20px;
-  font-size: 15px;
-  font-weight: normal;
-  line-height: 30px;
-}
-
- .container9 .carousel-inner{
-   background: black;
-   padding:15px;
-   margin-top: 20px;
-   border-radius: 5px;
- }
  
-.container9 .carousel-inner img{
-  width: 50px;
-  display: inline-block;
-  margin-bottom: 20px;
-  margin-left: 10px;
-}
-
-.carousel-inner h1{
-  text-decoration: underline;
-}
-
-.carousel-inner h2{
-  font-family: 'Noto Sans';
-  color: white;
-  padding-bottom: 20px;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 30px;
-}
-
-.carousel-inner .bi-check{
-  color: #f88000;
-  font-size: 19px;
-  border: 2px solid white;
-  border-radius: 50%;
-  height: 20px;
-  width: 30px;
-}
-
-#active h4{
-  padding-top: 150px;
-  font-weight: bold;
-  font-family: 'Noto Sans';
-  font-size: 21px;
-  color: white;
-}
-
-#active2 h4{
-  padding-top: 100px;
-}
-
-.carousel-inner h4{
-  font-weight: bold;
-  font-family: 'Noto Sans';
-  font-size: 21px;
-  color: white;
-}
-
-.carousel-inner .active strong{
-  font-size: 17px;
-  font-weight: normal;
-  font-family: 'Noto Sans';
-}
-
-/*quote page*/
-
-    #overlay-bg1 h1{
-      color: white;
-      font-size: 40px;
-      font-family: 'Noto Sans';
-      font-weight: bold;
-    }
-
-    
-    #overlay-bg2 h1{
-      color: white;
-      font-size: 27px;
-      font-family: 'Noto Sans';
-      font-weight: bold;
-      padding: 20px 0px;
-    }
-   
-  #overlay-bg2 h3{
-      color: white;
-      font-size: 22px;
-      font-family: 'Noto Sans';
-      font-weight: bold;
-      padding: 20px 0px;
-    }
-    
-   #overlay-bg2 p{
-    color: white;
-    font-size: 16px;
-    font-family: 'Noto Sans';
-    font-weight: normal;
-    }
-    
-  .quote-content h2{
-      color: black;
-      font-size: 24px;
-      font-family: 'Noto Sans';
-      font-weight:bold;
-      padding: 60px 0px;
-    }
-
-#quote-content1{
-  background: white;
-  padding: 30px 15px;
-  border-bottom: 7px solid black;
-}
-
-.quote-content{
-  margin-bottom: 20px;
-}
-
- #textbox{
-  width: 100%;
-  border: none;
-  padding: 10px 15px;
-  margin-bottom: 10px;
-  background: #e8e8e8;
-  color:black;
-  padding-bottom: 200px;
-  font-size: 17px;
-}
-
-::placeholder{
-  font-size: 18px;
-  padding: 10px;
-  color: #808888;
-}
-

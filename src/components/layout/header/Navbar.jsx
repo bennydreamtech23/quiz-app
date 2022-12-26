@@ -91,7 +91,7 @@ function NavBar({changeTheme,  currentTheme}) {
           <Links changeTheme={changeTheme} currentTheme={theme}/>
         ) : (
           <div className={classes.navlinks}>
-            <Link to="/" className="link">
+            <Link to="/about" className="link">
              About
             </Link>
             <Link to="/services"  className="link">

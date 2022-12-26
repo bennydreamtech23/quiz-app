@@ -106,7 +106,8 @@ html, body, .app{
   font-size: 16px;
   padding: 11px 26px;
     color: var(--darkpurple);
-   border: 1px solid var(--darkpurple);
+   border-bottom: 2px solid var(--darkpurple);
+    border-top: 2px solid #52688F;
   //box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
      margin-right: 1rem;
       margin-left: 1rem;
@@ -116,6 +117,7 @@ html, body, .app{
   background: white;
   cursor: pointer;
   color: white;
+  border: noe;
  background: var(--darkpurple);
 }  
 
