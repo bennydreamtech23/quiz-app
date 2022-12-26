@@ -4,6 +4,7 @@ import { BrowserRouter as HashRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./components/pages/landing-page/LandingPage";
 import Contact from "./components/pages/contact/Contact";
 import Service from "./components/pages/services/Services";
+import About from "./components/pages/about/About";
 //cta pages
 import Signup from "./components/core/signup/Signup";
 import Login from "./components/core/login/Login";
@@ -27,19 +28,24 @@ function App() {
 
      <main>
  <HashRouter>
+ <div>
  <Navbar changeTheme={changeTheme} currentTheme={theme}/>
       <Routes>
         {/* external pages */}
         <Route path="/" element={<LandingPage />} />
          <Route path="/contact" element={<Contact/>} />
       <Route path="/services" element={<Service/>} />
+      <Route path="/about" element={<About/>} />
      {/*CTA PAGES*/}
       <Route path="/signup" element={<Signup/>} />
       <Route path="/login" element={<Login/>} />
       <Route path="/reset" element={<Reset/>} />
+    </Routes>
+      </div>
     {/*Dashboard PAGES*/}
+    <Routes>
       <Route path="/dashboard" element={<Dashbaord/>} />
-      </Routes>
+  </Routes>
       </HashRouter>
 </main>
     </Container>

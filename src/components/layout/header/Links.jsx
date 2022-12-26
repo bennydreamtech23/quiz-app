@@ -103,7 +103,7 @@ const classes = useStyles();
         <List className={classes.drawer}>
          <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
             <ListItemText>
-              <Link to="/" className={classes.link}>About</Link>
+              <Link to="/about" className={classes.link}>About</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
@@ -113,7 +113,7 @@ const classes = useStyles();
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>
             <ListItemText>
-              <Link to="/contact" className={classes.link}>Blog</Link>
+              <Link to="/" className={classes.link}>Blog</Link>
             </ListItemText>
           </ListItem>
           <ListItem onClick={() => setOpenDrawer(false)} className={classes.listItem}>

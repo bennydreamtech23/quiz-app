@@ -8,7 +8,9 @@
     gap: 1rem;
     /* width: 6rem; */
     border-radius: 3rem;
-    background-color: var(--color-info-light);
+     border-bottom: 2px solid var(--darkpurple);
+    border-top: 2px solid #52688F;
+    background: transparent;
     /* background-color: rgb(237, 237, 237); */
     box-shadow: inset 3px 3px 3px var(--neu-dark),
                 inset -3px -3px 3px var(--neu-light);
