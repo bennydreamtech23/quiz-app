@@ -5,6 +5,7 @@ import LandingPage from "./components/pages/landing-page/LandingPage";
 import Contact from "./components/pages/contact/Contact";
 import Service from "./components/pages/services/Services";
 import About from "./components/pages/about/About";
+import Blog from "./components/pages/blog/Blog";
 //cta pages
 import Signup from "./components/core/signup/Signup";
 import Login from "./components/core/login/Login";
@@ -36,6 +37,7 @@ function App() {
          <Route path="/contact" element={<Contact/>} />
       <Route path="/services" element={<Service/>} />
       <Route path="/about" element={<About/>} />
+      <Route path="/blog" element={<Blog/>} />
      {/*CTA PAGES*/}
       <Route path="/signup" element={<Signup/>} />
       <Route path="/login" element={<Login/>} />

@@ -97,7 +97,7 @@ function NavBar({changeTheme,  currentTheme}) {
             <Link to="/services"  className="link">
               Services
             </Link>
-            <Link to="/" className="link">
+            <Link to="/blog" className="link">
               Blog
             </Link>
             <Link to="/contact" className="link">
