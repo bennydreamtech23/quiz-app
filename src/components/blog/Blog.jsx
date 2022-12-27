@@ -24,7 +24,7 @@ const Blog = () =>{
     <Card.Title>Three Important Things You Must Look For While Choosing Your Stack</Card.Title>
     <small>Jan 30, 2022<strong> John Benedict</strong></small>
     
-  <Card.Text>You must be honest with yourself and llok for the stack you are comfortable working with and at the same time you can develop and grow with.
+  <Card.Text>You must be honest with yourself and look for the stack you are comfortable working with and at the same time you can develop and grow with.
   These three things i will be discussing is based on my own viewpoint...</Card.Text>
   <button className="btn">READ MORE</button>
  </div>
