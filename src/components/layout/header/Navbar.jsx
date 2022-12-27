@@ -14,7 +14,7 @@ import NavbarStyles from "./Navbar.module.scss";
 import {BsFillBrightnessHighFill, BsFillMoonFill} from "react-icons/bs";
 
 //logout react properties
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, logout} from "../../core/login/firebase";
@@ -24,7 +24,6 @@ const useStyles = makeStyles((theme) => ({
   appBar:{
     backgroundColor: "transparent",
       boxShadow: '0px 0px 0px 0px',
- 
   },
   navlinks: {
     display: "flex",

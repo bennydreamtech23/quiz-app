@@ -30,7 +30,7 @@ function App() {
     <Container fluid className= 'app' data-theme={theme}>
      <main>
  <HashRouter>
- {!user ? <Navbar changeTheme={changeTheme} currentTheme={theme} style={{display:"block"}}></Navbar> : null}
+ {!user ? <Navbar changeTheme={changeTheme} currentTheme={theme}></Navbar> : null}
       <Routes>
         {/* external pages */}
         <Route path="/" element={<LandingPage />} />
@@ -46,7 +46,7 @@ function App() {
     {/*Dashboard PAGES*/}
     <>
     <Routes>
-      <Route path="/dashboard" element={<Dashbaord/>} />
+      <Route path="/dashboard" element={<Dashbaord/>}/>
   </Routes>
   </>
       </HashRouter>
