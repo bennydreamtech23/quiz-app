@@ -36,7 +36,7 @@ const Testimonies = () =>{
 
     <Col className="col-md testimonyenvelope">
    <Card style={{width:"18rem", height:"23rem"}} className={PreparationStyles.testimonyenvelope}>
-       <Card.Img variant="top" src="https://randomuser.me/api/portraits/women/39.jpg" className={PreparationStyles.cardimg}/>
+       <Card.Img variant="top" src="https://randomuser.me/api/portraits/men/10.jpg" className={PreparationStyles.cardimg}/>
       <Card.Body  className={PreparationStyles.CardContent}>
       <Card.Title className="text-center p-2 text-dark">Mobile Developer</Card.Title>
       <Card.Text className="text-center p-2 text-dark">switch stack to mobile developer because of the amazing  react Native challenge</Card.Text>
@@ -47,7 +47,7 @@ const Testimonies = () =>{
     
     <Col className="col-md testimonyenvelope">
       <Card style={{width:"18rem", height:"23rem"}} className={PreparationStyles.testimonyenvelope}>
-       <Card.Img variant="top" src="https://randomuser.me/api/portraits/women/39.jpg" className={PreparationStyles.cardimg}/>
+       <Card.Img variant="top" src="https://randomuser.me/api/portraits/women/19.jpg" className={PreparationStyles.cardimg}/>
       <Card.Body  className={PreparationStyles.CardContent}>
       <Card.Title className="text-center p-2 text-dark">Frontend Developer</Card.Title>
       <Card.Text className="text-center p-2 text-dark">I love this app would recommend it anytime</Card.Text>

@@ -1,0 +1,3 @@
+  <button className={dashboardStyles.dashboard__btn} onClick={logout}>
+          Logout
+        </button>

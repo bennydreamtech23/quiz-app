@@ -24,10 +24,7 @@ const useStyles = makeStyles((theme) => ({
   appBar:{
     backgroundColor: "transparent",
       boxShadow: '0px 0px 0px 0px',
-  /*  transition: theme.transitions.create(["width", "margin"], {
-     easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
-    }),*/
+ 
   },
   navlinks: {
     display: "flex",
