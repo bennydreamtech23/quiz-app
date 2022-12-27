@@ -18,7 +18,8 @@ import {useState} from "react";
 import {auth} from "./components/core/login/firebase";
 //dashboard
 import Dashbaord from "./components/dashboard/Dashbaord";
-
+//challenges
+import FrontendCard from "./components/challenge-card/frontend/FrontendCard";
 function App() {
   const [theme, setTheme] = useState("dark")
     const [user] = useAuthState(auth);
@@ -47,6 +48,9 @@ function App() {
     <>
     <Routes>
       <Route path="/dashboard" element={<Dashbaord/>}/>
+      
+      {/*CHALLENGE ROUTING*/}
+  <Route path="/frontendcard" element={<FrontendCard/>}/>
   </Routes>
   </>
       </HashRouter>

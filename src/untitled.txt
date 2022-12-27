@@ -1,3 +1,128 @@
   <button className={dashboardStyles.dashboard__btn} onClick={logout}>
           Logout
-        </button>
+        </button> 
+        
+        
+      {
+  id: 2,
+    level:"Beginner",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1583/day_1583.png",
+    name:"Enter Password Components",
+    language:"Html, css",
+    description:"Build a simple and well structured enter password component",
+    figmaLink:"https://www.figma.com/file/SOjf4eBdzK1aHzK9gf5Xy7/day_1583?fuid=890682416405807029",
+    designSource: "https://uidesigndaily.com/posts/figma-enter-password-log-in-authentication-card-day-1583",
+  },
+  {
+  id:3, 
+    level:"Advanced",
+    image:"https://caphe.sfo2.cdn.digitaloceanspaces.com/assets/images/coinbase-web-dashboard-ui-kit-thumb.jpg",
+    name:"Build a Dashboard",
+    language:"React,sass,mui",
+    description:"Build a product dashboard using mui and sass for ui design and use react hooks.",
+    figmaLink:"https://www.figma.com/file/9XUxM4k8eIPrUdD9lCnCKN/CoinBase-Web-Dashboard?node-id=0%3A1&t=9Mt9ljTgRpZQVRJM-0",
+    designSource:"https://www.uistore.design/items/coinbase-web-dashboard-ui-kit/",
+  },
+  {
+  id:4, 
+    level:"Intermediate",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1577/day_1577.png",
+    name:"Popular Collection Card",
+    language:"React,sass",
+    description:"Build popular collection card that has filter and image gallery .",
+    figmaLink:"https://www.figma.com/file/BdiEw4ZokMnni8AHamJEny/day_1577?node-id=0%3A1&t=11ZNW0hc7jTpxk2L-0",
+    designSource: "https://uidesigndaily.com/posts/figma-collections-list-collection-card-day-1577",
+  },
+  {
+  id:5, 
+    level:"Beginner",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1580/day_1580.png",
+    name:"profile page Header",
+    language:"html, css",
+    description:"A simple profile page header.",
+    figmaLink:"https://www.figma.com/file/aK3CQRYmmYP5IoXVKpM0qZ/day_1580?node-id=0%3A1&t=ulMChjjQgyvdhTrq-0",
+    designSource: "https://uidesigndaily.com/posts/figma-profile-page-header-card-day-1580",
+  },
+   {
+  id:6, 
+    level:"Advanced",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1384/day_1384.png",
+    name:"Landing page",
+    language:"React, sass,mui",
+    description:"A landing page that app pages are routed properly and should be visible when clicked and the login page form validation should be done.",
+    figmaLink:"https://www.figma.com/file/L2pjcgPmN6v52F1uWOWW59/day_1384?t=knvmHq3myzCv94QO-0",
+    designSource: "https://uidesigndaily.com/posts/figma-landing-page-website-day-1384",
+   },
+     {
+  id:7, 
+    level:"Intermediate",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1575/day_1575.png",
+    name:"Product Info UI Design",
+    language:"React, sass/css",
+    description:"A card design with product info UI Design.",
+    figmaLink:"https://www.figma.com/file/qp0rSd5Yyc5wkSGpAsfwTJ/day_1575?node-id=0%3A1&t=G3992JP9ScWgi0Gb-0",
+    designSource: "https://uidesigndaily.com/posts/figma-product-info-ui-design-card-day-1575",
+     },
+       {
+  id:8, 
+    level:"Beginner",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1561/day_1561.png",
+    name:"Cards UI Design",
+    language:"Html, css",
+    description:"A simple card design",
+    figmaLink:"https://www.figma.com/file/4DQ1WU4IU3er4YLTQ6Dm19/day_1561?node-id=0%3A1&t=UeNpx0S1qIxGb8TV-0",
+    designSource: "https://uidesigndaily.com/posts/figma-cards-ui-design-card-info-day-1561",
+     },
+          {
+  id:9, 
+    level:"Advanced",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1542/day_1542.png",
+    name:"Users List Dashboard",
+    language:"React, scss, mui",
+    description:"A React app routing and react hooks and API integration implementated",
+    figmaLink:"https://www.figma.com/file/WYdqIBmDczUudnzWEQgeLV/day_1542?node-id=0%3A1&t=Qg6jBC7qcjkNjrwY-0",
+    designSource: "https://uidesigndaily.com/posts/figma-users-list-card-day-1542",
+     },
+{
+  id:10, 
+    level:"Intermediate",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1574/day_1574.png",
+    name:"Buy Subscription Section",
+    language:"React, scss",
+    description:"Subscription components with various subscriptions plan based on the business",
+    figmaLink:"https://www.figma.com/file/VH0KUtxWmielah0Tn5yFEx/day_1574?node-id=0%3A1&t=v6SsM77kNWUMAvQP-0",
+    designSource: "https://uidesigndaily.com/posts/figma-buy-subscription-section-pricing-card-day-1574",
+     },
+     {
+  id:11, 
+    level:"Beginner",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1562/day_1562.png",
+    name:"Price Card",
+    language:"Html, css",
+    description:"A price card have a form components which has all the necessary information needed especially the price of the item",
+    figmaLink:"https://www.figma.com/file/pIVKfnJzSShtT3tYoazoQT/day_1562?node-id=0%3A1&t=MohDIWuO8KLfU9JE-0",
+    designSource: "https://uidesigndaily.com/posts/figma-price-card-day-1562",
+     },
+     {
+  id:12, 
+    level:"Advanced",
+    image:"https://uidesigndaily.fra1.digitaloceanspaces.com/uploads/1556/day_1556.png",
+    name:"Contraction Timer",
+    language:"React, sass",
+    description:"Build a functional contraction timer. Most specially the timer functionality must be working well",
+    figmaLink:"https://www.figma.com/file/XSrkQ4nCiUg05kx0iXNlOW/day_1556?node-id=0%3A1&t=8lwYOz8CVkOuH0B8-0",
+    designSource: "https://uidesigndaily.com/posts/figma-contraction-timer-day-1556",
+     }, 
+    
+    
+     const filterResult = (catItem) =>{
+    const result = frontendchallenge.filter((curDate) =>{
+      return curDate.level === catItem;
+    });
+    setData(result)
+  }
+  
+  <button className="btn"
+onClick= {() => filterResult("Beginner")}>
+Restaurant
+</button>

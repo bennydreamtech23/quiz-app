@@ -1,5 +1,4 @@
 .dashboard {
-  height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -27,27 +26,45 @@ text-align: center;
 padding: 1rem;
 }
  
-.toggle{
-    cursor: pointer;
-    padding: .5rem .8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-    /* width: 6rem; */
-    border-radius: 3rem;
-     border-bottom: 2px solid var(--darkpurple);
-    border-top: 2px solid #52688F;
-    background: transparent;
-    /* background-color: rgb(237, 237, 237); */
-    box-shadow: inset 3px 3px 3px var(--neu-dark),
-                inset -3px -3px 3px var(--neu-light);
+.testimonytool{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+  flex-direction: row;
+     @media only screen and (min-width: 320px) and  (max-width: 480px){
+flex-direction: column;
+}
+     @media only screen and (min-width: 481px) and  (max-width: 768px){
+flex-direction: row;
 }
 
-.sun{
-  color: var(--color-warning);
+.testimonyenvelope{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 1rem;
+  flex-direction: column;
 }
 
-.moon{
-  color: skyblue;
+
+
+  .testimonyBox{
+    position: relative;
+    width: 100%;
+    height: 400px;
+    top: 50px;
+    left: 0px;
+     @media only screen and (min-width: 320px) and  (max-width: 768px){
+       width: 100%;
+height: 600px;
 }
+  }
+  
+   .CardContent{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+   }
+}
+
