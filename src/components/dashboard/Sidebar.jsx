@@ -7,29 +7,23 @@ import {
   Typography,
   makeStyles,
   useTheme,
-  useMediaQuery,
    Box 
 } from "@material-ui/core";
 
 import Hidden from '@material-ui/core/Hidden';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from "@material-ui/icons/Menu"; 
-import Divider from "@mui/material/Divider";
+
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
-import ListItemButton from '@mui/material/ListItemButton';
-import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
-import MailIcon from '@mui/icons-material/Mail'
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, logout} from "./../core/login/firebase";
 import { useEffect, useState } from "react";
 import CloseIcon from '@material-ui/icons/Close';
-
-import dashboardStyles from "./Dashbaord.module.scss";
-
+import  DashbardContent from "./DashbardContent"
+// import dashboardStyles from "./Dashbaord.module.scss";
 const drawerWidth = 240;
 
 const useStyles = makeStyles(theme => ({
@@ -66,8 +60,8 @@ const useStyles = makeStyles(theme => ({
 }));
 
 export default function Sidebar() {
+  
      const [user, loading] = useAuthState(auth);
- // const [name, setName] = useState("");
   const navigate = useNavigate();
   
   useEffect(() => {
@@ -75,7 +69,7 @@ export default function Sidebar() {
     if (!user) return navigate("/");
   }, [user, loading]);
 
- const dummyCategories = ['Hokusai', 'Hiroshige', 'Utamaro', 'Kuniyoshi', 'Yoshitoshi']
+ const dummyCategories = ['Profile', 'Notification', 'setting']
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -84,14 +78,24 @@ export default function Sidebar() {
     setMobileOpen(!mobileOpen)
   }
   
+
 const drawer = (
     <div>
       <List>
+      <Box>
         {dummyCategories.map((text, index) => (
           <ListItem button key={text}>
-            <ListItemText primary={text} />
+            <ListItemText primary={text}/>
           </ListItem>
         ))}
+         </Box>
+        <ListItem>
+            <ListItemText>
+             <button className="btn" onClick={logout}>
+          Logout
+        </button>
+            </ListItemText>
+          </ListItem>
       </List>
     </div>
   );
@@ -112,7 +116,7 @@ const drawer = (
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" noWrap>
-            Responsive drawer
+            ULTIMATIUM ARENA
           </Typography>
         </Toolbar>
       </AppBar>
@@ -154,7 +158,7 @@ const drawer = (
       </nav>
       <div className={classes.content}>
         <div className={classes.toolbar} />
-     ultimatium
+  <DashbardContent/>
       </div>
     </div>
     </>
