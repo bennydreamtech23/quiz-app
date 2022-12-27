@@ -76,9 +76,9 @@ useEffect(() => {
         </button>
         </div>
         
-      <div className="d-flex flex-column justify-content-center align-items-center">
+      <div className="d-flex flex-column justify-content-center align-items-center mb-5">
          <p> Already have an account? </p>
-          <button className="btn"><Link className="link" to="/login">Login</Link></button>
+          <button className="btn"><Link className="link mb-5" to="/login">Login</Link></button>
         </div>
       </Col>
       </Row>

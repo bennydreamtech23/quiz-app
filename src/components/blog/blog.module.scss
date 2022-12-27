@@ -1,0 +1,61 @@
+
+/*-----section9-----*/
+
+.container10 h1{
+  font-size: 30px;
+  font-weight: bolder;
+  font-family:'Noto Sans';
+}
+
+.container10 p{
+  line-height: 30px;
+  padding-top: 5px;
+  font-family: 'Noto Sans';
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.container10 h2{
+ margin-top: 10px;
+  font-size: 21px;
+  font-weight: normal;
+  font-family:'Noto Sans';
+  padding-top:5px;
+}
+
+.container10 h3{
+  padding-top: 10px;
+  font-size: 19px;
+  font-weight: bold;
+  font-family:'Noto Sans';
+  padding-top:5px;
+}
+
+.container10 .col-md{
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+}
+
+.container10 img{
+  width: 350
+}
+.Card{
+  height: 600px;
+}
+ .content{
+  padding: 16px;
+  height: 350px;
+  color: black;
+}
+
+.img{
+  width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}

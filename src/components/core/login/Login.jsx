@@ -24,23 +24,24 @@ function Login() {
 
   
   return (
-    <Container className={LoginStyles.login}>
-   <Row  className="d-flex flex-row-reverse">
-     <Col className="col-md d-flex justify-content-center flex-column mb-3">
+     <Container fluid className={LoginStyles.register}>
+    <Row className="d-flex flex-row-reverse">
+        <Col className="col-md d-flex justify-content-center flex-column mb-3">
       <img src={imghero} alt="contact card"/>
       </Col>
-      
       <Col className="col-md d-flex flex-column justify-content-center align-items-center">
- <input
+     
+        <input
           type="text"
-          className={LoginStyles.login__textBox}
+          className= {LoginStyles.register__textBox}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="E-mail Address"
         />
+        
         <input
           type="password"
-          className={LoginStyles.login__textBox}
+          className={LoginStyles.register__textBox}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
@@ -57,6 +58,7 @@ function Login() {
           Login with Google
         </button>
         </div>
+        
         <div className="col-md d-flex flex-column justify-content-center">
           <Link to="/reset" className="link">Forgot Password</Link>
         </div>
@@ -64,12 +66,11 @@ function Login() {
           <p>
           Don't have an account?
           </p>
-        <button className="btn">
+        <button className="btn mb-5">
         <Link to="/signup" className="link">Register</Link> 
         </button>
         </div>
-</Col>
-    
+      </Col>
       </Row>
     </Container>
   );
