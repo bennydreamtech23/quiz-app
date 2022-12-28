@@ -12,9 +12,9 @@ const Contact = () =>{
     <>
    <Container fluid className={contactStyles.contactContainer}>
     <Row className="d-flex flex-row-reverse">
-      
+       
     <Col className="col-md d-flex justify-content-center flex-column">
-<img src={ContactHero} alt="HeroSectionimg"/>
+<img src={ContactHero} alt="HeroSectionimg" className={contactStyles.heroimg}/>
 </Col>
      <Col className='col-md testimonyBox'>
     <Card className={contactStyles.testimonyCard}>

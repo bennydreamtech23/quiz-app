@@ -19,6 +19,10 @@
 }
   }
   
+  .heroimg:hover{
+transform: scale(1.25);
+  }
+  
   .headerTitle{
 font-family: 'Space Mono';
 font-style: normal;
@@ -65,6 +69,11 @@ height: 62px;
 border: none;
 color: white;
 padding: 1rem 1rem;
+}
+
+.headerBtn:hover{
+border: 1px solid var(--darkpurple);
+background: transparent;
 }
 
 .headerContent{

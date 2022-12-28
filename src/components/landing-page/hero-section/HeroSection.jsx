@@ -14,7 +14,7 @@ const HeroSection = () =>{
 <Row className="d-flex flex-row-reverse">
 
  <Col className="col-md d-flex justify-content-center flex-column mb-3">
-      <img src={imghero} alt="contact card"/>
+      <img src={imghero} alt="contact card" className={styles.heroimg}/>
       </Col>
       
 <Col className="col-md">

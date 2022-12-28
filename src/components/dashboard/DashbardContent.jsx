@@ -11,10 +11,20 @@ import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 import Styles from "./Dashbaord.module.scss";
 import { Link } from "react-router-dom";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
  const DashboardContent = () =>{
+   useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
   return(
     <Container>
-     <Row className={Styles.testimonytool}>
+     <Row className={Styles.testimonytool} 
+     data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
      <Col className="col-md mb-5 testimonyenvelope">
     <Card style={{width:"18rem", color:"black"}} className={Styles.testimonyenvelope}>
     <Card.Img src={frontend} style={{width:"18rem"}} alt=""></Card.Img>
@@ -29,7 +39,7 @@ import { Link } from "react-router-dom";
     <Card.Img src={backend} style={{width:"18rem"}} alt=""></Card.Img>
     <Card.Title className={Styles.dashboardTitle}>Backend challenge</Card.Title>
     <Card.Text className={Styles.dashboardText}>This challenges is based on your level of experience and has advanced challenges to improve your skill level.</Card.Text>
-    <Button variant="dark" className="mb-5">COMING SOON</Button>
+    <Button variant="dark" className="mb-5"><Link to="/backend" className="link">COMING SOON</Link></Button>
     </Card>
     </Col>
     
@@ -38,7 +48,7 @@ import { Link } from "react-router-dom";
     <Card.Img src={mobile} style={{width:"18rem"}} alt=""></Card.Img>
     <Card.Title className={Styles.dashboardTitle}>Mobile challenge</Card.Title>
     <Card.Text className={Styles.dashboardText}>This challenges is based on your level of experience and has advanced challenges to improve your skill level.</Card.Text>
-    <Button variant="dark" className="mb-5">COMING SOON</Button>
+       <Button variant="dark" className="mb-5"><Link to="/mobile" className="link">COMING SOON</Link></Button>
     </Card>
     </Col>
     
@@ -47,7 +57,7 @@ import { Link } from "react-router-dom";
     <Card.Img src= {designer} style={{width:"18rem"}} alt=""></Card.Img>
     <Card.Title className={Styles.dashboardTitle}>Designer challenge</Card.Title>
     <Card.Text className={Styles.dashboardText}>This challenges is based on your level of experience and has advanced challenges to improve your skill level.</Card.Text>
-    <Link to="/" className="btn mb-5">Check Designer Challenge</Link>
+    <Link to="/designer" className="btn mb-5">Check Designer Challenge</Link>
     </Card>
     </Col>
     
@@ -56,7 +66,7 @@ import { Link } from "react-router-dom";
     <Card.Img src= {product} style={{width:"18rem"}} alt=""></Card.Img>
     <Card.Title className={Styles.dashboardTitle}>P.M challenge</Card.Title>
     <Card.Text className={Styles.dashboardText}>This challenges is based on your level of experience and has advanced challenges to improve your skill level.</Card.Text>
-    <Button variant="dark" className="mb-5">COMING SOON</Button>
+     <Button variant="dark" classNam e="mb-5"><Link to="/product" className="link">COMING SOON</Link></Button>
     </Card>
     </Col>
     

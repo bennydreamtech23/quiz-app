@@ -6,6 +6,8 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, logout} from "../../core/login/firebase";
 import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Frontend = () =>{
  const [data, setData] = useState(FrontendChallenge)
@@ -14,7 +16,7 @@ const Frontend = () =>{
   
   useEffect(() => {
     if (loading) return;
-    if (!user) return navigate("/");
+    if (!user) return navigate("/dashboard");
   }, [user, loading]);
 
 
@@ -25,8 +27,17 @@ const Frontend = () =>{
     setData(result)
   }
   
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+  
   return(
-<Container>
+<Container
+ data-aos="fade-left"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-duration="1500">
 <header className={Style.containerFrontend}>
 <button 
 className="btn headerRow"
