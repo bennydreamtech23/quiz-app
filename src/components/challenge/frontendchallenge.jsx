@@ -8,6 +8,7 @@ const FrontendChallenge = [
     description:"Build a simple and well structured sign up page and form validation should be applied",
     figmaLink:"https://www.figma.com/file/jtgh2nG4hMO58Z3pWhKGWV/day_1481?node-id=0%3A1&t=m4UaQPqEGEc58vwt-0",
     designSource: "https://uidesigndaily.com/posts/figma-sign-in-log-authentication-day-1481",
+    solutionLink: "http://sharevideo1.com/v/dElkTmVvSG5pRVk=?t=ytb&f=co",
   },
 {
   id: 2,
@@ -18,6 +19,7 @@ const FrontendChallenge = [
     description:"Build a simple and well structured enter password component",
     figmaLink:"https://www.figma.com/file/SOjf4eBdzK1aHzK9gf5Xy7/day_1583?fuid=890682416405807029",
     designSource: "https://uidesigndaily.com/posts/figma-enter-password-log-in-authentication-card-day-1583",
+    solutionLink: "http://sharevideo1.com/v/X3dJb1dWUWE1dG8=?t=ytb&f=co",
   },
   {
   id:3, 
@@ -28,6 +30,7 @@ const FrontendChallenge = [
     description:"Build a product dashboard using mui and sass for ui design and use react hooks.",
     figmaLink:"https://www.figma.com/file/9XUxM4k8eIPrUdD9lCnCKN/CoinBase-Web-Dashboard?node-id=0%3A1&t=9Mt9ljTgRpZQVRJM-0",
     designSource:"https://www.uistore.design/items/coinbase-web-dashboard-ui-kit/",
+    solutionLink: "http://sharevideo1.com/v/eUtWMUlHYWhYcUE=?t=ytb&f=co",
   },
   {
   id:4, 
@@ -38,6 +41,7 @@ const FrontendChallenge = [
     description:"Build popular collection card that has filter and image gallery .",
     figmaLink:"https://www.figma.com/file/BdiEw4ZokMnni8AHamJEny/day_1577?node-id=0%3A1&t=11ZNW0hc7jTpxk2L-0",
     designSource: "https://uidesigndaily.com/posts/figma-collections-list-collection-card-day-1577",
+    solutionLink: "http://sharevideo1.com/v/NEt4SGNiUThHWVE=?t=ytb&f=co",
   },
   {
   id:5, 
@@ -48,6 +52,7 @@ const FrontendChallenge = [
     description:"A simple profile page header.",
     figmaLink:"https://www.figma.com/file/aK3CQRYmmYP5IoXVKpM0qZ/day_1580?node-id=0%3A1&t=ulMChjjQgyvdhTrq-0",
     designSource: "https://uidesigndaily.com/posts/figma-profile-page-header-card-day-1580",
+    solutionLink: "http://sharevideo1.com/v/eWJYdWxtZWlsRk0=?t=ytb&f=co",
   },
    {
   id:6, 
@@ -58,6 +63,7 @@ const FrontendChallenge = [
     description:"A landing page that app pages are routed properly and should be visible when clicked and the login page form validation should be done.",
     figmaLink:"https://www.figma.com/file/L2pjcgPmN6v52F1uWOWW59/day_1384?t=knvmHq3myzCv94QO-0",
     designSource: "https://uidesigndaily.com/posts/figma-landing-page-website-day-1384",
+    solutionLink: "http://sharevideo1.com/v/VGJHbnE1Q0JQWFk=?t=ytb&f=co",
    },
      {
   id:7, 
@@ -68,6 +74,7 @@ const FrontendChallenge = [
     description:"A card design with product info UI Design.",
     figmaLink:"https://www.figma.com/file/qp0rSd5Yyc5wkSGpAsfwTJ/day_1575?node-id=0%3A1&t=G3992JP9ScWgi0Gb-0",
     designSource: "https://uidesigndaily.com/posts/figma-product-info-ui-design-card-day-1575",
+    solutionLink: "http://sharevideo1.com/v/bnFTUDhIbldKR3M=?t=ytb&f=co",
      },
        {
   id:8, 
@@ -78,6 +85,7 @@ const FrontendChallenge = [
     description:"A simple card design",
     figmaLink:"https://www.figma.com/file/4DQ1WU4IU3er4YLTQ6Dm19/day_1561?node-id=0%3A1&t=UeNpx0S1qIxGb8TV-0",
     designSource: "https://uidesigndaily.com/posts/figma-cards-ui-design-card-info-day-1561",
+    solutionLink: "http://sharevideo1.com/v/WUJva3dzQWpLdkE=?t=ytb&f=co",
      },
           {
   id:9, 
@@ -88,6 +96,7 @@ const FrontendChallenge = [
     description:"A React app routing and react hooks and API integration implementated",
     figmaLink:"https://www.figma.com/file/WYdqIBmDczUudnzWEQgeLV/day_1542?node-id=0%3A1&t=Qg6jBC7qcjkNjrwY-0",
     designSource: "https://uidesigndaily.com/posts/figma-users-list-card-day-1542",
+    solutionLink: "http://sharevideo1.com/v/d1lwQ1d3RDFvejA=?t=ytb&f=co",
      },
 {
   id:10, 
@@ -98,6 +107,7 @@ const FrontendChallenge = [
     description:"Subscription components with various subscriptions plan based on the business",
     figmaLink:"https://www.figma.com/file/VH0KUtxWmielah0Tn5yFEx/day_1574?node-id=0%3A1&t=v6SsM77kNWUMAvQP-0",
     designSource: "https://uidesigndaily.com/posts/figma-buy-subscription-section-pricing-card-day-1574",
+    solutionLink: "https://link.medium.com/rywpCuWP7vb",
      },
      {
   id:11, 
@@ -108,6 +118,7 @@ const FrontendChallenge = [
     description:"A price card have a form components which has all the necessary information needed especially the price of the item",
     figmaLink:"https://www.figma.com/file/pIVKfnJzSShtT3tYoazoQT/day_1562?node-id=0%3A1&t=MohDIWuO8KLfU9JE-0",
     designSource: "https://uidesigndaily.com/posts/figma-price-card-day-1562",
+    solutionLink: "http://sharevideo1.com/v/VHpRXzZIaGlUcTQ=?t=ytb&f=co",
      },
      {
   id:12, 
@@ -118,6 +129,7 @@ const FrontendChallenge = [
     description:"Build a functional contraction timer. Most specially the timer functionality must be working well",
     figmaLink:"https://www.figma.com/file/XSrkQ4nCiUg05kx0iXNlOW/day_1556?node-id=0%3A1&t=8lwYOz8CVkOuH0B8-0",
     designSource: "https://uidesigndaily.com/posts/figma-contraction-timer-day-1556",
+    solutionLink: "http://sharevideo1.com/v/UndsRnlTMVJoZXc=?t=ytb&f=co",
      },
   ]
-  
+  export default FrontendChallenge

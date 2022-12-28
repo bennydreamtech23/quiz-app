@@ -76,7 +76,7 @@ body {
       margin-left: 2rem;
 }
    .link:hover{
-        color: var(--orange);
+        color: var(--darkpurple);
         border-bottom: 1px solid var(--orange);
    }
       .logo{
@@ -155,4 +155,11 @@ html, body, .app{
   align-items: center;
   justify-content: center;
   color: black;
+}
+
+.headerRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
 }
