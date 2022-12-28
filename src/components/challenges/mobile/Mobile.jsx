@@ -3,7 +3,7 @@ import Style from './Mobile.module.scss';
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useNavigate } from "react-router-dom";
 import { auth, logout} from "../../core/login/firebase";
-import { useEffect, useState } from "react";
+import { useEffect} from "react";
 
 const Mobile = () =>{
   const [user, loading] = useAuthState(auth);
