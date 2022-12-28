@@ -96,6 +96,11 @@ color: white;
 padding: 1rem 1rem;
 }
 
+.headerBtn:hover{
+border: 1px solid var(--darkpurple);
+background: transparent;
+}
+
 .headerContent{
    display: flex;
    flex-direction: column;

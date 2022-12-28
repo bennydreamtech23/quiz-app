@@ -36,7 +36,7 @@ useEffect(() => {
     <Container fluid className={signupStyles.register}>
     <Row className="d-flex flex-row-reverse">
         <Col className="col-md d-flex justify-content-center flex-column mb-3">
-      <img src={imghero} alt="contact card"/>
+      <img src={imghero} alt="contact card" className={signupStyles.heroimg}/>
       </Col>
       <Col className="col-md d-flex flex-column justify-content-center align-items-center">
       

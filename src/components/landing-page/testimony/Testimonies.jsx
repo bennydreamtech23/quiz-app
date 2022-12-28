@@ -3,12 +3,22 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import PreparationStyles from "./Testimonies.module.scss";
-//import Button from 'react-bootstrap/Button';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 import {BsHandThumbsUp} from "react-icons/bs";
 const Testimonies = () =>{
+ useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+  
   return (
     <>
-    <Container fluid className={PreparationStyles.TestimonyContainer}>
+    <Container fluid className={PreparationStyles.TestimonyContainer} 
+    data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="1500">
     <h1 className="text-center">
     User Feedback
     </h1>

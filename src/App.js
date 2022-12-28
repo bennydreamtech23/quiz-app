@@ -20,6 +20,10 @@ import {auth} from "./components/core/login/firebase";
 import Dashbaord from "./components/dashboard/Dashbaord";
 //challenges
 import FrontendCard from "./components/challenges/frontend/Frontend";
+import Designer from "./components/challenges/designer/Designer";
+import Backend from "./components/challenges/backend/Backend";
+import Mobile from "./components/challenges/mobile/Mobile";
+import ProductManager from "./components/challenges/product-manager/ProductManager";
 
 function App() {
   const [theme, setTheme] = useState("dark")
@@ -52,6 +56,10 @@ function App() {
       
       {/*CHALLENGE ROUTING*/}
      <Route path="/frontend" element={<FrontendCard/>}/>
+  <Route path="/designer" element={<Designer/>}/>
+   <Route path="/backend" element={<Backend/>}/>
+  <Route path="/mobile" element={<Mobile/>}/>
+  <Route path="/product" element={<ProductManager/>}/>
   </Routes>
   </>
       </HashRouter>

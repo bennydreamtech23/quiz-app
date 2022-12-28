@@ -8,16 +8,27 @@ import object from "./../../assets/picture2.jpg";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Card from 'react-bootstrap/Card';
+import AOS from "aos";
+import "aos/dist/aos.css";
+import React, { useEffect } from "react";
 
 import blogStyles from "./blog.module.scss";
 const Blog = () =>{
-
+useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  });
+  
   return(
     <Container fluild className="p-5">
   <div className={blogStyles.container10}>
     <Row>
   
-      <div class="col-md mb-5">
+      <div class="col-md mb-5" 
+      data-aos="zoom-out-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-delay="300"
+     data-aos-duration="1500">
       <Card>
     <Card.Img variant="top" src={vision} alt='img1' className={blogStyles.img}></Card.Img>
         <div className={blogStyles.content}>
@@ -31,7 +42,11 @@ const Blog = () =>{
  </Card>
  </div>
  
-    <div class="col-md mb-5">
+    <div class="col-md mb-5"
+     data-aos="zoom-out-down"
+     data-aos-easing="ease-out-cubic"
+     data-aos-delay="300"
+     data-aos-duration="1500">
        <Card>
    <Card.Img variant="top" src={statement} alt='img1' className={blogStyles.img}></Card.Img>
         <div class={blogStyles.content}>
@@ -44,7 +59,11 @@ const Blog = () =>{
   </Card>
     </div>
     
-      <div class="col-md  mb-5">
+      <div class="col-md  mb-5"
+       data-aos="zoom-out-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-delay="300"
+     data-aos-duration="1500">
        <Card>
     <Card.Img variant="top" src={object} alt='img1' className={blogStyles.img}></Card.Img>
         <div class={blogStyles.content}>
@@ -57,7 +76,11 @@ const Blog = () =>{
     </div>
 
 
-      <div class="col-md  mb-5">
+      <div class="col-md mb-5"
+       data-aos="zoom-out-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-delay="300"
+     data-aos-duration="1500">
 <Card>
 <Card.Img variant="top" src={mission} alt='img1' className={blogStyles.img}></Card.Img>
         <div class={blogStyles.content}>
@@ -70,7 +93,11 @@ const Blog = () =>{
  </Card>
  </div>
  
-    <div class="col-md mb-5">
+    <div class="col-md mb-5"
+     data-aos="zoom-out-down"
+     data-aos-easing="ease-out-cubic"
+     data-aos-delay="300"
+     data-aos-duration="1500">
     <Card>
      <Card.Img src={process} alt='img1' className={blogStyles.img}></Card.Img>   
         <div class={blogStyles.content}>
@@ -83,7 +110,11 @@ const Blog = () =>{
  </Card>
     </div>
     
-      <div class="col-md mt-5">
+      <div class="col-md mt-5"
+       data-aos="zoom-out-up"
+     data-aos-easing="ease-out-cubic"
+     data-aos-delay="300"
+     data-aos-duration="1500">
       <Card>
       <Card.Img src={approach} alt='img1' className={blogStyles.img}></Card.Img>  
         <div class={blogStyles.content}>
