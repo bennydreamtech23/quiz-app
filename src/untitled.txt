@@ -126,3 +126,85 @@
 onClick= {() => filterResult("Beginner")}>
 Restaurant
 </button>
+
+
+    <section>
+{data.map((values) =>{
+const {id, image, name, language, description, figmaLink, designSource} = values
+  return(
+      <article key={id}>
+    <div>
+    <img 
+    src={image} alt="houseflag"/>
+    </div>
+    <div>
+    <div>
+    <h3>
+    {name}
+    </h3>
+    <p>
+    {language}
+    </p>
+    
+  <p>
+    className="text">
+    {description}
+    </p>
+    </div>
+    <div>
+    <h3
+    style={{fontWeight:"700"}}>
+    {figmaLink}
+    </h3>
+    <p> 
+    {designSource}
+    </p>
+    </div>
+    </div>
+    </article>
+  )
+})}
+
+    </section>
+
+<header className="grid lg:grid-cols-9 grid-cols-3 md:grid-cols-5 gap-2 m-5">
+
+<button 
+className="general bg-transparent lg:text-xl text-base hover:underline"
+onClick= {() => filterResult("restaurant")}>
+Restaurant
+</button>
+
+<button 
+className="general bg-transparent lg:text-xl text-base hover:underline"
+onClick= {() => filterResult("cottage")}>
+Cottage
+</button>
+
+<button 
+className="general bg-transparent lg:text-xl text-base hover:underline"
+onClick= {() => filterResult("castle")}>
+Castle
+</button>
+
+<button className="general bg-transparent lg:text-xl text-base hover:underline" onClick= {() => filterResult("fantast city")}>
+fantast city
+</button>
+
+<button className="general bg-transparent lg:text-xl text-base hover:underline" onClick= {() => filterResult("beach")}>
+beach
+</button>
+
+<button className="general bg-transparent lg:text-xl text-base hover:underline" onClick= {() => filterResult("cabins")}>
+Cabins
+</button>
+
+<button className="general bg-transparent lg:text-xl text-base hover:underline" onClick= {() => filterResult("off-grid")}>
+Off-grid
+</button>
+
+<button className="general bg-transparent lg:text-xl text-base hover:underline" onClick= {() => filterResult("farm")}>
+Farm
+</button>
+
+</header>

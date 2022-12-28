@@ -20,7 +20,7 @@ import { Link } from "react-router-dom";
     <Card.Img src={frontend} style={{width:"18rem"}} alt=""></Card.Img>
     <Card.Title className={Styles.dashboardTitle}>Frontend challenge</Card.Title>
     <Card.Text className={Styles.dashboardText}>This challenges is based on your level of experience and has advanced challenges to improve your skill level.</Card.Text>
-    <Link to="/frontendcard" className="btn mb-5">Check Frontend Challenge</Link>
+    <Link to="/frontend" className="btn mb-5">Check Frontend Challenge</Link>
     </Card>
     </Col>
     
