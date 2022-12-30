@@ -1,8 +1,6 @@
 
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import ContactHero from "./../../assets/contactHero.png";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
@@ -11,19 +9,13 @@ const Contact = () =>{
   return(
     <>
    <Container fluid className={contactStyles.contactContainer}>
-    <Row className="d-flex flex-row-reverse">
-       
-    <Col className="col-md d-flex justify-content-center flex-column">
-<img src={ContactHero} alt="HeroSectionimg" className={contactStyles.heroimg}/>
-</Col>
-
-     <Col className='col-md testimonyBox'>
+     <div className='col-md testimonyBox'>
     <Card className={contactStyles.testimonyCard}>
       <Card.Body  className={contactStyles.CardContent}>
-      <Card.Text className={contactStyles.headerSubTitleContact}>CONTACT US</Card.Text>
         <Card.Title className={contactStyles.headerTitleContact}>Get In Touch</Card.Title>
+        <Card.Text className={contactStyles.headerSubTitleContact}>Contact us for any information</Card.Text>
+
       <Form>
-      
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>NAME</Form.Label>
         <Form.Control type="text"/>
@@ -49,8 +41,7 @@ const Contact = () =>{
     </Form>
       </Card.Body>
     </Card>
-    </Col>
-    </Row>
+    </div>
     </Container>
     </>
   )
