@@ -71,7 +71,7 @@ const {id, image, name, language, description, figmaLink, designSource,   soluti
   return(
       <Card key={id} className={Style.card}>
     <Card.Img variant="top" src={image} alt="houseflag" className={Style.cardimage}></Card.Img>
-       <div className={Style.cardbody}>
+       <div>
     <Card.Title className={Style.title}>{name}</Card.Title>
     <button className={Style.button}>
     {language}
@@ -90,7 +90,7 @@ const {id, image, name, language, description, figmaLink, designSource,   soluti
             </a>
   </div>
   
-  <div className='mb-5'>
+  <div className='mt-3'>
     <a href={solutionLink} className={Style.cardlinks} target="_blank">
              Solution Link
             </a>
