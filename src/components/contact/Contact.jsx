@@ -16,6 +16,7 @@ const Contact = () =>{
     <Col className="col-md d-flex justify-content-center flex-column">
 <img src={ContactHero} alt="HeroSectionimg" className={contactStyles.heroimg}/>
 </Col>
+
      <Col className='col-md testimonyBox'>
     <Card className={contactStyles.testimonyCard}>
       <Card.Body  className={contactStyles.CardContent}>

@@ -16,7 +16,7 @@ text-transform: uppercase;
   }
   
    .headerTitleContact{
-color:var(--darkpurple);
+color: var(--darkblue);
 font-family: 'space Mono';
 font-style: normal;
 font-weight: 700;
@@ -25,9 +25,9 @@ text-align: center;
 line-height: 64px;
 /* identical to box height, or 97% */
 text-align: center;
-  @media only screen and (min-width: 320px) and  (max-width: 480px){
-  font-size: 24px;
-  line-height: 28px;
+  @media only screen and (min-width: 320px) and  (max-width: 768px){
+  font-size: 16px;
+  line-height: 20px;
 }
   }
   
