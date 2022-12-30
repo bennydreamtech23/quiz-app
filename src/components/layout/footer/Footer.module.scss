@@ -79,4 +79,13 @@ flex-direction: column;
   background:  #52688F;
   margin-bottom: 1rem;
 }
+
+.footerCol{
+display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;
+margin-right: 20%;
+margin-left: 20%;
+}
 }

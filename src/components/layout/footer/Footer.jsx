@@ -13,7 +13,7 @@ const Footer = () =>{
    <Container fluid className={footerStyles.footerContainer}>
 <Row className="row-footer">
 <Col className="col-md-4">
-      <ul>
+      <ul className={footerStyles.footerCol}>
           <li>
             <p className={footerStyles.title}>
              Menu
@@ -43,7 +43,7 @@ const Footer = () =>{
 </Col>
 
 <Col className="col-md-4">
-      <ul>
+      <ul className={footerStyles.footerCol}>
         <li>
             <p className={footerStyles.title}>
              Services
