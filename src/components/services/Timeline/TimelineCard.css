@@ -74,7 +74,7 @@
     max-width: 250px;
     text-transform: uppercase;
     font-weight: bold;
-    border-bottom: 2px solid var(--darkpurple);
+    border-bottom: 2px solid var(--darkblue);
     border-top: 2px solid #52688F;
     padding: 10px 5px;
     font-family: "space Mono";
@@ -89,7 +89,7 @@
 
 .timeline-item-content .circle {
     border-bottom: 2px solid #52688F;
-    border-top: 2px solid var(--darkpurple);
+    border-top: 2px solid var(--darkblue);
     border-radius: 50%;
     position: absolute;
     top: calc(50% - 20px);
@@ -131,10 +131,11 @@ media only screen and (max-width: 1023px) {
     }
 
 .message {
-  width: 150px;
+  width: 130px;
  line-height: 25px;
   font-family: "Poppins", "Sans-Serif";
   margin-bottom: 10px;
+  padding: 3px;
 }
 
 }

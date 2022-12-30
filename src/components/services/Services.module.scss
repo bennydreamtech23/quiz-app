@@ -22,7 +22,7 @@ text-align: center;
 }
 
 .timelinecontainer::after {
-    background-color: var(--darkpurple);
+    background-color: var(--darkblue);
     content: '';
     position: absolute;
     left: calc(50% - 2px);

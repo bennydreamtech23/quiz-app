@@ -18,7 +18,6 @@ useEffect(() => {
             </span>
             <p>{title}</p>
             <span className="message">{text}</span>
-           
             <span className="circle" data-aos="flip-up">
             Challenge
             </span>

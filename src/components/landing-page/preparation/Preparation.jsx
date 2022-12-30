@@ -2,7 +2,6 @@
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import productmanager from "../../../assets/3785210.jpg";
 import productdesigner from "../../../assets/13038.jpg";
 import backend from "../../../assets/9813.jpg";
