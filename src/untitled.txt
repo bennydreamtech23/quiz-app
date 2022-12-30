@@ -208,3 +208,66 @@ Farm
 </button>
 
 </header>
+
+ <Card className = {cardStyles.card}>
+      <Card.Img variant="top" src={picture1}></Card.Img>
+      <Card.Body>
+        <Card.Title>Step 1</Card.Title>
+        <Card.Text>
+          Visit the Website
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    
+    
+<Card className = {cardStyles.card}>
+      <Card.Img variant="top" src={picture2}></Card.Img>
+      <Card.Body>
+        <Card.Title>Step 2</Card.Title>
+        <Card.Text>
+          Sigin up if you are new or already a player Login
+        </Card.Text>
+      </Card.Body>
+    </Card>
+
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture3}/>
+      <Card.Body>
+        <Card.Title>Step 3</Card.Title>
+        <Card.Text>
+        Welcome to the ULTIMATUM ARENA
+        </Card.Text>
+      </Card.Body>
+    </Card>
+
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture4} />
+      <Card.Body>
+        <Card.Title>Step 4</Card.Title>
+        <Card.Text>
+          Click your STACK
+        </Card.Text>
+      </Card.Body>
+    </Card>
+    
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture5} />
+      <Card.Body>
+        <Card.Title>Step 5</Card.Title>
+        <Card.Text>
+          Challenges related to that Stack will POPUP
+        </Card.Text>
+      </Card.Body>
+    </Card>
+
+    
+
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture6} />
+      <Card.Body>
+        <Card.Title>Step 6</Card.Title>
+        <Card.Text>
+          Challenge yourself based on your level
+        </Card.Text>
+      </Card.Body>
+    </Card>

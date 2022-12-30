@@ -1,8 +1,6 @@
 
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import picture6 from "../../../assets/Illustrations.png";
 import picture1 from "../../../assets/Illustrations (1).png";
 import picture2 from "../../../assets/8401.jpg";
@@ -18,10 +16,9 @@ const CardComponent =()=>{
     <>
     <Container fluid className={cardStyles.CardComponentContainer}>
     <h1 className={cardStyles.title}>How To Play</h1>
-    <Row>
-    <Col className="col-md">
-    <Card style={{ width: '18rem' , height: "25rem"}} className={cardStyles.card}>
-      <Card.Img variant="top" src={picture1} style={{ width: '18rem', height:"18rem"}} />
+ <div className={cardStyles.containerCard}>
+  <Card className = {cardStyles.card}>
+      <Card.Img variant="top" src={picture1} className={cardStyles.cardimage}></Card.Img>
       <Card.Body>
         <Card.Title>Step 1</Card.Title>
         <Card.Text>
@@ -29,11 +26,10 @@ const CardComponent =()=>{
         </Card.Text>
       </Card.Body>
     </Card>
-    </Col>
     
-    <Col className="col-md">
-    <Card style={{ width: '18rem' , height: "25rem"}} className={cardStyles.card}>
-      <Card.Img variant="top" src={picture2} style={{ width: '18rem', height:"18rem"}}/>
+    
+<Card className = {cardStyles.card}>
+      <Card.Img variant="top" src={picture2}></Card.Img>
       <Card.Body>
         <Card.Title>Step 2</Card.Title>
         <Card.Text>
@@ -41,11 +37,9 @@ const CardComponent =()=>{
         </Card.Text>
       </Card.Body>
     </Card>
-    </Col>
-    
-    <Col className="col-md">
-    <Card style={{ width: '18rem' , height: "25rem"}} className={cardStyles.card}>
-      <Card.Img variant="top" src={picture3} style={{ width: '18rem', height:"18rem"}}/>
+
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture3}/>
       <Card.Body>
         <Card.Title>Step 3</Card.Title>
         <Card.Text>
@@ -53,13 +47,9 @@ const CardComponent =()=>{
         </Card.Text>
       </Card.Body>
     </Card>
-    </Col>
-    </Row>
-    
-    <Row>
-    <Col className="col-md">
-    <Card style={{ width: '18rem' , height: "25rem"}} className={cardStyles.card}>
-      <Card.Img variant="top" src={picture4} style={{ width: '18rem', height:"18rem"}} />
+
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture4} />
       <Card.Body>
         <Card.Title>Step 4</Card.Title>
         <Card.Text>
@@ -67,11 +57,9 @@ const CardComponent =()=>{
         </Card.Text>
       </Card.Body>
     </Card>
-    </Col>
     
-        <Col className="col-md">
-    <Card style={{ width: '18rem' , height: "25rem"}} className={cardStyles.card}>
-      <Card.Img variant="top" src={picture5} style={{ width: '18rem', height:"18rem"}}/>
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture5} />
       <Card.Body>
         <Card.Title>Step 5</Card.Title>
         <Card.Text>
@@ -79,11 +67,11 @@ const CardComponent =()=>{
         </Card.Text>
       </Card.Body>
     </Card>
-    </Col>
+
     
-        <Col className="col-md">
-    <Card style={{ width: '18rem' , height: "25rem"}} className={cardStyles.card}>
-      <Card.Img variant="top" src={picture6} style={{ width: '18rem', height:"18rem"}} />
+
+    <Card className={cardStyles.card}>
+      <Card.Img variant="top" src={picture6} />
       <Card.Body>
         <Card.Title>Step 6</Card.Title>
         <Card.Text>
@@ -91,8 +79,7 @@ const CardComponent =()=>{
         </Card.Text>
       </Card.Body>
     </Card>
-    </Col>
-    </Row>
+ </div>
     </Container>
     </>
     )
