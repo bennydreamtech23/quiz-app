@@ -8,7 +8,7 @@ import picture3 from "../../../assets/13038.jpg";
 import picture4 from "../../../assets/4428861.jpg";
 import picture5 from "../../../assets/9813.jpg";
 import cardStyles from "./CardComponent.module.scss";
-
+import Row from 'react-bootstrap/Row';
 
 
 const CardComponent =()=>{
@@ -16,7 +16,7 @@ const CardComponent =()=>{
     <>
     <Container fluid className={cardStyles.CardComponentContainer}>
     <h1 className={cardStyles.title}>How To Play</h1>
- <div className={cardStyles.containerCard}>
+ <Row>
   <Card className = {cardStyles.card}>
       <Card.Img variant="top" src={picture1} className={cardStyles.cardimage}></Card.Img>
       <Card.Body>
@@ -79,7 +79,7 @@ const CardComponent =()=>{
         </Card.Text>
       </Card.Body>
     </Card>
- </div>
+ </Row>
     </Container>
     </>
     )

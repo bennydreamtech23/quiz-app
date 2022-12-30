@@ -10,13 +10,21 @@
 
 .PreparationBtn{
   box-sizing: border-box;
-  border: 1px solid #1D4645;
-  padding: 0px 10px;
+  border: 1px solid var(--darkblue);
+  padding: 30px 10px;
   background: transparent;
-  border-radius: 10px;
+  border-radius: 15px;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 1.5rem;
+  @media only screen and (min-width: 320px) and  (max-width: 768px){
+ padding: 10px 10px;
+} 
 }
  .PreparationBtn:hover{
     transform: scale(1.05);
+     background: var(--darkblue);
+     color: white;
   }
 .PreparationBtn:focus{
   outline: none;
@@ -28,53 +36,41 @@ font-weight: 700;
 font-size: 42px;
 line-height: 64px;
 text-transform: capitalize;
-  @media only screen and (min-width: 320px) and  (max-width: 480px){
-  font-size: 24px;
-  line-height: 28px;
+  @media only screen and (min-width: 320px) and  (max-width: 768px){
+  font-size: 16px;
+  line-height: 20px;
 }
   }
   
-  .box{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-}
-.card{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin: auto;
-  margin-top: 16px;
-.card:hover{
- transform: scale(1.05);
-}
-}
   
 .orange{
-background: var(--darkpurple);
+background: var(--darkblue);
 color: white;
-box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.04);
 border-radius: 4px;
 display: flex;
 justify-content: center;
 flex-direction: column;
   margin: auto;
   margin-top: 16px;
+   webkit-box-shadow: -8px 5px 5px -3px  rgba(74, 162, 247, 0.5);
+-moz-box-shadow: -8px 5px 5px -3px rgba(74, 162, 247, 0.5);
+box-shadow: -8px 10px 5px -3px rgba(74, 162, 247, 0.5);
 }
 
 .darkgreen{
 color: white;
-background: var(--darkpurple);
+background: var(--darkblue);
 mix-blend-mode: normal;
 opacity: 0.7;
   display: flex;
   justify-content: center;
   flex-direction: column;
   margin: auto;
-box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.04);
 border-radius: 4px;
 margin-top: 16px;
+-webkit-box-shadow: -8px 5px 5px -3px  rgba(255,255,255,0.3);
+-moz-box-shadow: -8px 5px 5px -3px  rgba(255,255,255,0.3);
+box-shadow: -8px 10px 5px -3px rgba(255,255,255,0.3);
 }
 
 .orangeImg{

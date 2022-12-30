@@ -9,21 +9,20 @@ import backend from "../../../assets/9813.jpg";
 import mobileDeveloper from "../../../assets/8401.jpg";
 import frontend from "../../../assets/3426526.jpg";
 import PreparationStyles from "./Preparation.module.scss";
-import Button from 'react-bootstrap/Button';
-
+//import Button from 'react-bootstrap/Button';
+import { Link } from "react-router-dom";
 const Preparation = () =>{
   return(
     <>
   <Container fluid className={PreparationStyles.PreparationContainer}>
     <div className={PreparationStyles.rowproduct}>
     <h1 className={PreparationStyles.headerTitle}>Let's Sharp Your Preparation</h1>
-<Button className={PreparationStyles.btn} variant="black">
-GET STARTED
-</Button>
+<Link  to="/login" className={PreparationStyles.PreparationBtn}>
+           GET STARTED
+            </Link>
 </div>
 
 <Row>
-    <Col className="col-md">
     <Card 
     className={PreparationStyles.darkgreen}
     style={{ width: '18rem' , height: "17rem"}}>
@@ -32,9 +31,7 @@ GET STARTED
       <Card.Title className="text-center p-2">Product Manager</Card.Title>
       </Card.Body>
     </Card>
-    </Col>
 
-    <Col className="col-md">
     <Card 
     className={PreparationStyles.orange}
     style={{ width: '18rem' , height: "17rem"}}>
@@ -43,9 +40,9 @@ GET STARTED
       <Card.Title className="text-center p-2">Product Designer</Card.Title>
       </Card.Body>
     </Card>
-    </Col>
+
     
-    <Col className="col-md">
+  
     <Card 
     className={PreparationStyles.darkgreen}
     style={{ width: '18rem' , height: "17rem"}}>
@@ -54,11 +51,7 @@ GET STARTED
       <Card.Title className="text-center p-2">Backend Developer</Card.Title>
       </Card.Body>
     </Card>
-    </Col>
-</Row>
 
-<Row>
-    <Col className="col-md">
     <Card 
     className={PreparationStyles.orange}
     style={{ width: '18rem' , height: "17rem"}}>
@@ -67,9 +60,8 @@ GET STARTED
       <Card.Title className="text-center p-2">Frontend Developer</Card.Title>
       </Card.Body>
     </Card>
-    </Col>
+    
 
-    <Col className="col-md">
     <Card 
     className={PreparationStyles.darkgreen}
     style={{ width: '18rem' , height: "17rem"}}>
@@ -78,7 +70,6 @@ GET STARTED
       <Card.Title className="text-center p-2">Mobile Developer</Card.Title>
       </Card.Body>
     </Card>
-    </Col>
     </Row>
 </Container>
     </>
