@@ -1,13 +1,37 @@
 
-/*-----section9-----*/
+.CardComponentContainer{
+  padding: 16px 32px;
+  margin-top: 1rem;
 
-.container10 h1{
-  font-size: 30px;
+.card{
+color: black;
+box-shadow: 0px 24px 48px rgba(0, 0, 0, 0.04);
+border-radius: 4px;
+display: flex;
+justify-content: center;
+flex-direction: column;
+ margin: auto;
+ margin-bottom: 1rem;
+ margin-top: 16px;
+ height: 500px;
+  width: 18rem;
+   text-align: center;
+-webkit-box-shadow: -8px 5px 5px -3px  rgba(255,255,255,0.2);
+-moz-box-shadow: -8px 5px 5px -3px  rgba(255,255,255,0.2);
+box-shadow: -8px 10px 5px -3px rgba(255,255,255,0.2);
+}
+
+.card:hover{
+ transform: scale(1.05);
+}
+
+ .CardComponentContainer h1{
+  font-size: 20px;
   font-weight: bolder;
   font-family:'Noto Sans';
 }
 
-.container10 p{
+.CardComponentContainer p{
   line-height: 30px;
   padding-top: 5px;
   font-family: 'Noto Sans';
@@ -17,7 +41,7 @@
   margin-bottom: 20px;
 }
 
-.container10 h2{
+.CardComponentContainer h2{
  margin-top: 10px;
   font-size: 21px;
   font-weight: normal;
@@ -25,7 +49,7 @@
   padding-top:5px;
 }
 
-.container10 h3{
+.CardComponentContainer h3{
   padding-top: 10px;
   font-size: 19px;
   font-weight: bold;
@@ -33,29 +57,14 @@
   padding-top:5px;
 }
 
-.container10 .col-md{
-  margin-bottom: 20px;
-  padding-bottom: 10px;
-}
-
-.container10 img{
-  width: 350
-}
-.Card{
-  height: 600px;
-}
- .content{
-  padding: 16px;
-  height: 350px;
-  color: black;
-}
-
 .img{
-  width: 300px;
+  border: none; 
+  border-radius: 15px;
+  width: 210px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: auto;
-
+}
 }
