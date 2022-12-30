@@ -40,8 +40,6 @@ const Preparation = () =>{
       </Card.Body>
     </Card>
 
-    
-  
     <Card 
     className={PreparationStyles.darkgreen}
     style={{ width: '18rem' , height: "17rem"}}>

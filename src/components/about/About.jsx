@@ -8,11 +8,12 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 const About = () =>{
   return(
-    <Container>
+    <Container className={AboutStyles.about}>
        <Row className="d-flex flex-row-reverse">
        <Col className="col-md d-flex justify-content-center flex-column mb-3">
        <img src={imghero} className={AboutStyles.img} alt=""/>
        </Col>
+       
       <Col className="col-md">
     <h1 className={AboutStyles.headerTitle}>
     We Love Innovation and Challenge
@@ -25,6 +26,7 @@ const About = () =>{
     <button className={AboutStyles.headerBtn}>
     REGISTER NOW
     </button>
+    
     <div className={AboutStyles.headerContent}>
 <h1 className={AboutStyles.headerBottom}> OF ACTIVE USERS</h1>
 <h3 className={AboutStyles.headerBottomSub}>20,000+</h3>
@@ -69,7 +71,7 @@ const About = () =>{
     <h1 className={AboutStyles.headerSubtitleBold}>
 Our Vision
     </h1>
-    <p className={AboutStyles.headertext}  style={{textAlign:"center"}}>
+    <p className={AboutStyles.headerpara}  style={{textAlign:"center"}}>
     Ultimatium is built to try solve the issue of searching various search engine for challenge based on the stack of study.
     It main objective is to relieve developers, designers, product manager and other stack in tech the stress and headache of searching various websites and relying on other developer challenge.
     </p>
@@ -84,7 +86,7 @@ Our Vision
     <h1 className={AboutStyles.headerSubtitleBold}>
 Our Approach
     </h1>
-    <p className={AboutStyles.headertext} style={{textAlign:"center"}}>
+    <p className={AboutStyles.headerpara} style={{textAlign:"center"}}>
    Ultimatium carried out an extensive research on challenges on each stack and based on the level of the user.
    The Team also consult other developers to ask for their opinion on the subject matter.
     </p>
@@ -100,7 +102,7 @@ Our Approach
     <h1 className={AboutStyles.headerSubtitleBold}>
 Our   process
     </h1>
-    <p className={AboutStyles.headertext} style={{textAlign:"center"}}>
+    <p className={AboutStyles.headerpara} style={{textAlign:"center"}}>
    We have succefully launched the Frontend and Designer challenge and working toward the launching of other stack.
    In progress with our collaboration with other tech stack.
     </p>
