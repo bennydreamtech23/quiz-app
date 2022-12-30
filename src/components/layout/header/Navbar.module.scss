@@ -8,7 +8,7 @@
     gap: 1rem;
     /* width: 6rem; */
     border-radius: 3rem;
-     border-bottom: 2px solid var(--darkpurple);
+     border-bottom: 2px solid var(--darkblue);
     border-top: 2px solid #52688F;
     background: transparent;
     /* background-color: rgb(237, 237, 237); */
@@ -21,5 +21,5 @@
 }
 
 .moon{
-  color: skyblue;
+  color:  var(--darkblue);
 }

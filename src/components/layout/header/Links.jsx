@@ -25,8 +25,8 @@ const useStyles = makeStyles((theme)=>({
         color: 'black',
         fontSize: "20px",
         "&:hover": {
-      color: "green",
-      borderBottom: "1px solid black",
+      color: " #4AA2F7",
+      borderBottom: "1px solid #4AA2F7",
     },
 
     },

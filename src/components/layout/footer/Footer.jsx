@@ -11,8 +11,8 @@ const Footer = () =>{
   return(
    <footer>
    <Container fluid className={footerStyles.footerContainer}>
-<Row>
-<Col className="col-md">
+<Row className="row-footer">
+<Col className="col-md-4">
       <ul>
           <li>
             <p className={footerStyles.title}>
@@ -42,7 +42,7 @@ const Footer = () =>{
         </ul>
 </Col>
 
-<Col className="col-md">
+<Col className="col-md-4">
       <ul>
         <li>
             <p className={footerStyles.title}>
@@ -73,7 +73,7 @@ const Footer = () =>{
         </ul>
 </Col>
 
-<Col className="col-md">
+<Col className="col-md-4">
       <ul className={footerStyles.footerIcon}>
       <li>
 <Button variant="light"><BsTwitter></BsTwitter></Button>
@@ -90,7 +90,7 @@ const Footer = () =>{
 <div className={footerStyles.footerRuler}></div>
 <div className={footerStyles.footerButtom}>
 <Row>
-<Col className="col-md">
+<Col className="col-md-4">
       <ul>
           <li>
             <p>
@@ -100,7 +100,7 @@ const Footer = () =>{
         </ul>
 </Col>
 
-<Col className="col-md">
+<Col className="col-md-4">
       <ul>
         <li>
             <p>
@@ -110,7 +110,7 @@ const Footer = () =>{
         </ul>
 </Col>
 
-<Col className="col-md">
+<Col className="col-md-4">
       <ul>
         <li>
             <p>

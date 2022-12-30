@@ -5,7 +5,7 @@
 --input-color:  #EFF0F2;
     --black : #242D49;
     --gray : #788097;
-    --blueCard : #DDF8FE;
+    --darkblue: #4AA2F7;
     --purple: rgb(238 210 255);
     --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
     --orangeCard: rgba(252, 166, 31, 0.45);
@@ -39,7 +39,7 @@
   /* ========= Dark Theme Variable ========== */
 [data-theme = "dark"]{
  --black : #fff;
-  --color-bg: #12131d;
+  --color-bg: rgba(19, 23, 48, 1);
   --color-white: #202528;
   --color-dark:  #1D4645;
   --color-dark-variant: #a3bdcc;
@@ -76,13 +76,12 @@ body {
       margin-left: 2rem;
 }
    .link:hover{
-        color: var(--darkpurple);
-        border-bottom: 1px solid var(--orange);
+        color: var(--darkblue);
    }
       .logo{
     flex-grow: 1;
     cursor: pointer;
-    color: var(--darkpurple);
+    color: var(--darkblue);
     text-decoration: none;
   }
 }
@@ -105,8 +104,8 @@ html, body, .app{
   border: none;
   font-size: 16px;
   padding: 11px 26px;
-    color: var(--darkpurple);
-   border-bottom: 2px solid var(--darkpurple);
+    color: var( --darkblue);
+   border-bottom: 2px solid var( --darkblue);
     border-top: 2px solid #52688F;
   //box-shadow: 0px 20px 24px 3px rgba(251, 161, 40, 0.42);
      margin-right: 1rem;
@@ -117,8 +116,8 @@ html, body, .app{
   background: white;
   cursor: pointer;
   color: white;
-  border: noe;
- background: var(--darkpurple);
+  border: none;
+ background: var(--darkblue);
 }  
 
 @media only screen and (min-width: 280px) and (max-width: 1080px){
