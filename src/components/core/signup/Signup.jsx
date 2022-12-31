@@ -11,6 +11,7 @@ import {
   registerWithEmailAndPassword,
   signInWithGoogle,
 }from "../login/firebase";
+
 import signupStyles from "./Signup.module.scss";
 
 function Signup() {
@@ -38,48 +39,61 @@ useEffect(() => {
         <Col className="col-md d-flex justify-content-center flex-column mb-3">
       <img src={imghero} alt="contact card" className={signupStyles.heroimg}/>
       </Col>
-      <Col className="col-md d-flex flex-column justify-content-center align-items-center">
       
+      <Col className="col-md d-flex flex-column justify-content-center align-items-center">
+      <div className={signupStyles.col}>
+       <h3 className="text-center">Sign Up</h3>
+      <p className="text-center">Sign Up To Get Started</p>
+      
+        <div className="d-flex flex-column justify-content-center mb-3">
+        <label>Name</label>
         <input type="text"
           className={signupStyles.register__textBox}
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="Full Name"
+          placeholder="Enter your name"
         />
+        </div>
         
+         <div className="d-flex flex-column justify-content-center  mb-3">
+        <label>Email</label>
         <input
           type="text"
           className= {signupStyles.register__textBox}
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="E-mail Address"
+          placeholder="Enter your email"
         />
-        
-
+              </div>
+              
+ <div className="d-flex flex-column justify-content-center mb-3">
+  <label>Password</label>
         <input
           type="password"
           className={signupStyles.register__textBox}
           value={password}
           onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password"
+          placeholder="Create a password"
         />
+        </div>
         
         <div className="d-flex flex-column justify-content-center">
         <button className="btn mb-3" onClick={register}>
-          Register
+          Create account
         </button>
         <button
           className="btn"
           onClick={signInWithGoogle}
         >
-          Register with Google
+          Sign up with Google
         </button>
         </div>
         
-      <div className="d-flex flex-column justify-content-center align-items-center mb-5">
+      <div className="d-flex flex-column justify-content-center align-items-center mt-5 mb-5">
          <p> Already have an account? </p>
           <button className="btn"><Link className="link mb-5" to="/login">Login</Link></button>
         </div>
+    </div>
       </Col>
       </Row>
     </Container>

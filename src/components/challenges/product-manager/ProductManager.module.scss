@@ -1,16 +1,21 @@
- .headerTitle{
+.headerTitle{
 font-family: 'Space Mono';
 font-style: normal;
 font-weight: 700;
 font-size: 65px;
 line-height: 80px;
-color: var( --darkpurple);
-  @media only screen and (min-width: 320px) and  (max-width: 480px){
-  font-size: 40px;
-  line-height: 60px;
+color: var( --darkblue);
+  @media only screen and (min-width: 320px) and  (max-width: 768px){
+  font-size: 24px;
+  line-height: 28px;
 }
   }
   
   .backend{
-    padding: 17rem;
+border-radius: 4px;
+display: flex;
+flex-direction: column;
+ height: 100vh;
+  width: 100%;
+text-align: center;
   }

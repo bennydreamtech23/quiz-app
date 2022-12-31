@@ -15,25 +15,31 @@
 }
 
 .card{
- width: 280px;
-  height: 650px;
-  border-radius: 15px;
-  padding: 20px;
-  color: black;
-  text-align: center;
-  margin:auto;
-  background: #fff;
--webkit-box-shadow: -8px 5px 5px -3px rgba(255,255,255,0.2);
+color: black;
+border-radius: 4px;
+display: flex;
+//justify-content: center;
+flex-direction: column;
+ margin: auto;
+ margin-bottom: 1rem;
+ margin-top: 16px;
+ height: 650px;
+  width: 18rem;
+   text-align: center;
+-webkit-box-shadow: -8px 5px 5px -3px  rgba(255,255,255,0.2);
 -moz-box-shadow: -8px 5px 5px -3px  rgba(255,255,255,0.2);
-box-shadow: -8px 10px 5px -3px  rgba(255,255,255,0.2);
+box-shadow: -8px 10px 5px -3px rgba(255,255,255,0.2);
   @media only screen and (min-width: 320px) and (max-width: 768px){
 height: 680px;
 }
   
 .cardimage{
-  border: none; 
+   border: none; 
   border-radius: 15px;
-  width: 250px;
+  width: 210px;
+ display: flex;
+flex-direction: column;
+ margin: auto;
 }
 
 .title{
@@ -62,7 +68,7 @@ justify-content: space-between;
   border: none;
   font-size: 13px;
   padding: 0.5rem;
-    color: var(--darkpurple);
+    color: var(--darkblue);
    border-bottom: 2px solid var(--darkblue);
     border-top: 2px solid #52688F;
 background: transparent;
@@ -85,21 +91,21 @@ margin-bottom: 10px;
       margin-left: 2rem;
 }
    .cardlink:hover{
-        color: var(--darkpurple);
-        border-bottom: 1px solid var(--orange);
+        color: var(--darkblue);
+        border-bottom: 1px solid var(--darkblue);
    }
 
    .cardlinks{
-  color: var(--darkpurple);
+  color: var(--darkblue);
   text-decoration: none;
   font-size: 16px;
-     margin-right: 2rem;
-      margin-left: 2rem;
-      font-weight: bold;
+  margin-right: 2rem;
+ margin-left: 2rem;
+ font-weight: bold;
 }
    .cardlinks:hover{
         color: black;
-        border-bottom: 1px solid var(--orange);
+        border-bottom: 1px solid var(--darkblue);
    }
 
 

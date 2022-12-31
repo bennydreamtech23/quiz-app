@@ -71,24 +71,22 @@ const {id, image, name, language, description, designSource, solutionLink} = val
   return(
       <Card key={id} className={Style.card}>
     <Card.Img variant="top" src={image} alt="houseflag" className={Style.cardimage}></Card.Img>
-       <div className={Style.cardbody}>
     <Card.Title className={Style.title}>{name}</Card.Title>
     <button className={Style.button}>
     {language}
     </button>
-    </div>
   <p
-    className="text">
+    className="text-center p-3">
     {description}
     </p>
 <div className={Style.cardbody}>
-    <a href={designSource} className={Style.cardlink} target="_blank">
+    <a href={designSource} className={Style.cardlink} target="_blank" rel="noreferrer">
              Design Source
             </a>
   </div>
   
   <div className='mb-5'>
-    <a href={solutionLink} className={Style.cardlinks} target="_blank">
+    <a href={solutionLink} className={Style.cardlinks} target="_blank" rel="noreferrer">
              Solution Link
             </a>
   </div>

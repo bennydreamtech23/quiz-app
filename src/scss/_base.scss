@@ -68,10 +68,11 @@ body {
 .app{
   background: var(--color-bg);
    color: var(--black); 
+   
    .link{
   color: var(--black);
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
      margin-right: 2rem;
       margin-left: 2rem;
 }
@@ -140,6 +141,7 @@ html, body, .app{
 ::webkit-scrollbar-thumb{
   background-color: var(--dark-blue);
 }
+
 .testimonyenvelope{
   display: flex;
   align-items: center;
@@ -160,5 +162,6 @@ html, body, .app{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: auto;
 }

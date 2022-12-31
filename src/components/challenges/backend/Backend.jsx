@@ -16,15 +16,18 @@ const Backend = () =>{
   }, [user, loading]);
 
   return(
-<Container>
+<Container fluid className="p-5">
+     
 <header className={Style.backend}>
- <h1  className="headerRow text-center">COMING SOON!!!!</h1>
+<div className="headerRow">
+ <h1  className={Style.headerTitle}>COMING SOON!!!!</h1>
  <p className="headerRow text-center" style={{margin: "2rem"}}> WE WOULD KEEP YOU UPDATED</p>
  <button 
 className="btn headerRow"
 onClick= {logout}>
 logout
 </button>
+</div>
 </header>
 </Container>
     )

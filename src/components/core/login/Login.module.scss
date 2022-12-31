@@ -1,11 +1,26 @@
 .register {
   display: flex;
- // align-items: center;
   justify-content: center;
   flex-direction: column;
   height: 100%;
-}
 
+ .imgContainer:hover{
+transform: scale(1.25);
+  }
+  
+   .col{
+    margin: 0px;
+    padding: 16px 32px;
+  }
+  
+  .ruler{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 2rem;
+  }
+  
 .register__textBox {
   padding: 10px;
   font-size: 18px;
@@ -22,21 +37,21 @@
   color: white;
   background-color: black;
 }
+
 .register__google {
   background-color: #4285f4;
 }
-.register div {
-  margin-top: 7px;
+
+ .link{
+  color: var(--black);
+  text-decoration: none;
+  font-size: 16px;
+        @media only screen and (min-width: 320px) and  (max-width: 768px){
+font-size: 12px;
+}
 }
 
-.register__container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+   .link:hover{
+        color: var(--darkblue);
+   }
 }
-
- .heroimg:hover{
-transform: scale(1.25);
-  }

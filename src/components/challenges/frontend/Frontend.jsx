@@ -78,20 +78,20 @@ const {id, image, name, language, description, figmaLink, designSource,   soluti
     </button>
     </div>
   <p
-    className="text">
+    className="text-center p-3">
     {description}
     </p>
 <div className={Style.cardbody}>
-     <a href={figmaLink} className={Style.cardlink} target="_blank">
+     <a href={figmaLink} className={Style.cardlink} target="_blank" rel="noreferrer">
              figmaLink
             </a>
-    <a href={designSource} className={Style.cardlink} target="_blank">
+    <a href={designSource} className={Style.cardlink} target="_blank" rel="noreferrer">
              Design Source
             </a>
   </div>
   
-  <div className='mt-3'>
-    <a href={solutionLink} className={Style.cardlinks} target="_blank">
+  <div className='mt-3 mb-5'>
+    <a href={solutionLink} className={Style.cardlinks} target="_blank" rel="noreferrer">
              Solution Link
             </a>
   </div>

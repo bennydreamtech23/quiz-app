@@ -21,7 +21,7 @@ useEffect(() => {
   
   return(
     <Container fluild className={blogStyles.CardComponentContainer}>
-    
+
     <Row 
     data-aos="zoom-out-up"
      data-aos-easing="ease-out-cubic"
@@ -83,7 +83,6 @@ useEffect(() => {
  </div>
  </Card>
     
-
       <Card className={blogStyles.card}>
       <Card.Img src={approach} alt='img1' className={blogStyles.img}></Card.Img>  
         <div class={blogStyles.content}>

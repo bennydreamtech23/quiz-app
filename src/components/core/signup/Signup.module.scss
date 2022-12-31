@@ -4,7 +4,15 @@
   justify-content: center;
   flex-direction: column;
   height: 100%;
-}
+  
+.heroimg:hover{
+transform: scale(1.25);
+  }
+  
+ .col{
+    margin: 0px;
+    padding: 16px 32px;
+  }
 
 .register__textBox {
   padding: 10px;
@@ -37,6 +45,6 @@
   text-align: center;
 }
 
- .heroimg:hover{
-transform: scale(1.25);
-  }
+ 
+  
+}

@@ -2,7 +2,6 @@
 import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
-import ContactHero from "./../../assets/contactHero.png";
 import FloatingLabel from 'react-bootstrap/FloatingLabel';
 import contactStyles from "./Contact.module.scss";
 const Contact = () =>{

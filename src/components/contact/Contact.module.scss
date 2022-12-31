@@ -2,16 +2,20 @@
 .contactContainer{
   margin-top: 3rem;
   padding: 1rem 2rem;
+  
   .headerSubTitleContact{
 font-family: 'Commissioner';
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
 line-height: 32px;
-/* identical to box height, or 178% */
 text-align: center;
 letter-spacing: 3px;
-text-transform: uppercase; 
+text-transform: capitalize; 
+@media only screen and (min-width: 320px) and  (max-width: 768px){
+  font-size: 12px;
+  line-height: 28px;
+}
   }
   
    .headerTitleContact{
@@ -25,7 +29,7 @@ line-height: 64px;
 /* identical to box height, or 97% */
 text-align: center;
   @media only screen and (min-width: 320px) and  (max-width: 480px){
-  font-size: 24px;
+  font-size: 20px;
   line-height: 28px;
 }
   }

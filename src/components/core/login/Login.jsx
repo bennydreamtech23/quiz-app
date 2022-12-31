@@ -26,11 +26,22 @@ function Login() {
   return (
      <Container fluid className={LoginStyles.register}>
     <Row className="d-flex flex-row-reverse">
-        <Col className="col-md d-flex justify-content-center flex-column mb-3">
-      <img src={imghero} alt="contact card"  className={LoginStyles.contactContainer}/>
+        <Col className="col-md d-flex justify-content-center flex-column">
+      <img src={imghero} alt="contact card"  className={LoginStyles.imgContainer}/>
       </Col>
-      <Col className="col-md d-flex flex-column justify-content-center align-items-center">
-     
+      
+      <Col className="col-md">
+      <div className={LoginStyles.col}>
+      <h3 className="text-center">Welcome Back</h3>
+      <p className="text-center">Welcome back! Please enter your details</p>
+      
+        <div className="d-flex flex-column justify-content-center">
+       <button className="btn" onClick={signInWithGoogle}>
+          Login with Google
+        </button>
+      </div>
+        <strong className={LoginStyles.ruler}>OR</strong>
+         <div className="d-flex flex-column justify-content-center">
         <input
           type="text"
           className= {LoginStyles.register__textBox}
@@ -46,6 +57,10 @@ function Login() {
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Password"
         />
+      </div>
+        <div className={LoginStyles.ruler}>
+          <Link to="/reset" className={LoginStyles.link}>Forgot Password</Link>
+        </div>
         
         <div className="d-flex flex-column justify-content-center">
         <button
@@ -54,14 +69,8 @@ function Login() {
         >
           Login
         </button>
-        <button className="btn" onClick={signInWithGoogle}>
-          Login with Google
-        </button>
         </div>
-        
-        <div className="col-md d-flex flex-column justify-content-center">
-          <Link to="/reset" className="link">Forgot Password</Link>
-        </div>
+       
         <div className="d-flex flex-column justify-content-center align-items-center">
           <p>
           Don't have an account?
@@ -69,6 +78,7 @@ function Login() {
         <button className="btn mb-5">
         <Link to="/signup" className="link">Register</Link> 
         </button>
+        </div>
         </div>
       </Col>
       </Row>
