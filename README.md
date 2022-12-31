@@ -1,5 +1,4 @@
-
-Live Link: https://challengeapp.netlify.app/
+live link: https://ultimatiumchallengeapp.netlify.app/
 
 DESIGN MOODBOARD
 LANDING PAGE BY RAFIA ORIN, FIGMA USERNAME: @rafia
