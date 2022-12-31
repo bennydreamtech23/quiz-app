@@ -63,9 +63,9 @@ const About = () =>{
       </div>
     </div>
     
-     <Row className="d-flex flex-row mt-5 mb-5">
-        <Col className="col-md d-flex justify-content-center flex-column mb-3">
-       <img src={vision} className={AboutStyles.imgCard} alt=""/>
+     <Row className="d-flex flex-row-reverse">
+       <Col className="col-md d-flex justify-content-center flex-column mb-3">
+       <img src={vision} className={AboutStyles.img} alt=""/>
        </Col>
       <Col className="col-md">
     <h1 className={AboutStyles.headerSubtitleBold}>
@@ -78,9 +78,9 @@ Our Vision
 </Col>
    </Row>
    
-    <Row className="d-flex flex-row-reverse  mb-5">
-     <Col className="col-md d-flex justify-content-center flex-column mb-3">
-       <img src={approach} className={AboutStyles.imgCard} alt=""/>
+    <Row className="d-flex flex-row-reverse">
+       <Col className="col-md d-flex justify-content-center flex-column mb-3">
+       <img src={approach} className={AboutStyles.img} alt=""/>
        </Col>
       <Col className="col-md">
     <h1 className={AboutStyles.headerSubtitleBold}>
@@ -93,9 +93,9 @@ Our Approach
 </Col>
    </Row>
    
- <Row className="d-flex flex-row">
-      <Col className="col-md d-flex justify-content-center flex-column mb-3">
-       <img src={process} className={AboutStyles.imgCard} alt=""/>
+ <Row className="d-flex flex-row-reverse">
+       <Col className="col-md d-flex justify-content-center flex-column mb-3">
+       <img src={process} className={AboutStyles.img} alt=""/>
        </Col>
        
       <Col className="col-md">
