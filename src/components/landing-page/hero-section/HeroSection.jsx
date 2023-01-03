@@ -28,8 +28,8 @@ Get better daily with CODEBASE CHALLENGE
 REGISTER NOW
 </button>
 <div className={styles.headerContent}>
-<h1 className={styles.headerBottom}> OF ACTIVE USERS</h1>
 <h3 className={styles.headerBottomSub}>20,000+</h3>
+<h1 className={styles.headerBottom}> OF ACTIVE USERS</h1>
 </div>
 </Col>
 </Row>
