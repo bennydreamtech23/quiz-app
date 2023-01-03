@@ -6,6 +6,7 @@ import process from "./../../assets/4428861.jpg";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from "react-router-dom";
 const About = () =>{
   return(
     <Container className={AboutStyles.about}>
@@ -23,13 +24,13 @@ const About = () =>{
     Ultimaium Arena is trying to collabaorate with other team of Developers to bring this solution to you.
     </p>
     
-    <button className={AboutStyles.headerBtn}>
+    <Link to="/signup" className={AboutStyles.headerBtn}>
     REGISTER NOW
-    </button>
+    </Link>
     
     <div className={AboutStyles.headerContent}>
+    <h3 className={AboutStyles.headerBottomSub}>20,000+</h3>
 <h1 className={AboutStyles.headerBottom}> OF ACTIVE USERS</h1>
-<h3 className={AboutStyles.headerBottomSub}>20,000+</h3>
 </div>
 </Col>
    </Row>
@@ -64,9 +65,6 @@ const About = () =>{
     </div>
     
      <Row className="d-flex flex-row-reverse">
-       <Col className="col-md d-flex justify-content-center flex-column mb-3">
-       <img src={vision} className={AboutStyles.img} alt=""/>
-       </Col>
       <Col className="col-md">
     <h1 className={AboutStyles.headerSubtitleBold}>
 Our Vision
@@ -76,6 +74,9 @@ Our Vision
     It main objective is to relieve developers, designers, product manager and other stack in tech the stress and headache of searching various websites and relying on other developer challenge.
     </p>
 </Col>
+       <Col className="col-md d-flex justify-content-center flex-column mb-3">
+       <img src={vision} className={AboutStyles.img} alt=""/>
+       </Col>
    </Row>
    
     <Row className="d-flex flex-row-reverse">
@@ -93,11 +94,10 @@ Our Approach
 </Col>
    </Row>
    
- <Row className="d-flex flex-row-reverse">
-       <Col className="col-md d-flex justify-content-center flex-column mb-3">
+ <Row className="d-flex flex-row">
+      <Col className="col-md d-flex justify-content-center flex-column mb-3">
        <img src={process} className={AboutStyles.img} alt=""/>
        </Col>
-       
       <Col className="col-md">
     <h1 className={AboutStyles.headerSubtitleBold}>
 Our   process

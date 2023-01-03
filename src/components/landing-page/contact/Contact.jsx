@@ -37,9 +37,11 @@ const Contact = () =>{
           style={{ height: '100px' }}
         />
       </FloatingLabel>
+    <div className="d-flex flex-column justify-content-center align-items-center">
       <button  className='btn mt-3' type="submit">
         Submit
       </button>
+      </div>
     </Form>
       </Card.Body>
     </Card>
